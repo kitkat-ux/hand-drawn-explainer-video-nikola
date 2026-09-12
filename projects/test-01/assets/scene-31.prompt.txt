@@ -1,0 +1,57 @@
+SCENE — single coherent scene, visual metaphor only (NO text inside the image): the camp remained relaxed—telling stories, grooming, and preparing tools. True deep sleep occurred in the second half of the night, between three and six in the morning,
+
+CHARACTER LOCK (verbatim, never shorten or drop, include in every scene prompt):
+The character is a chibi girl with a black ink #24251F bob haircut with side-swept fringe, wearing a flat sunflower #F0C541 short-sleeve shirt and flat cobalt #2855C7 trousers, with flat natural skin tone #EDB894, two small vertical-oval ink dot eyes and one tiny horizontal line mouth, about 2.2 heads tall including bob hair, drawn with constant-width blunt ink outlines and completely flat fills.
+MEASUREMENT CONVENTION: all pixel figures are measured on a 1360x765 canvas (16:9); body height = top of bob hair to heels; one head unit = top of bob hair to chin; face height is not a head unit.
+
+CHARACTER (copied verbatim from references/style-lock.md):
+- The same chibi girl wherever a character appears; proportions follow the MEASUREMENT CONVENTION above.
+- Proportion: 2.2 heads tall including bob hair (locked reference measures 434 px body height and 202 px head unit on a 765 px tall canvas). The face-height count (140 px face, about 3.1 face-heights per body) is recorded only to forbid its use as the head unit.
+- Hair: flat ink #24251F bob with side-swept fringe covering the forehead, bob ends curling inward at chin level; the hair is one solid flat shape with no strand lines.
+- Eyes: exactly two vertical-oval solid ink dots, each about 10 x 15 px on a 1360 px wide canvas, spaced about 53 px apart at mid-face height; no eyebrows, no lashes, no eye white, no pupil highlight.
+- Mouth: one horizontal ink line about 13 x 5 px; never an open mouth, never teeth.
+- Ears: one simple C-curve about 16 x 21 px on the visible side only.
+- Hands: mitten shapes with no finger separation, except a single extended index finger in pointing poses; feet: plain rounded skin-tone shapes with no shoe detail.
+- Expression ceiling: neutral to mildly determined; no anger veins, no sweat drops, no blush, no tears, no gritted teeth.
+- Costume lock: sunflower #F0C541 short-sleeve T-shirt with a single neckline line, cobalt #2855C7 long trousers; no patterns, no logos, no buttons, no pockets, no collar.
+
+REGION LAW:
+- Every image contains exactly three separate clusters arranged in left / center / right vertical columns.
+- Column bounds are x=0%, 34.5%, 69%, each 31% of frame width. Keep all ink and fills inside their own column, inset enough to leave full-height vertical paper #F8F6EF gutters at least 4% of frame width between clusters; no stroke, arrow or object may bridge a gutter.
+- The three clusters tell one coherent three-step sequence, read from left to right; one step per cluster.
+- Each cluster contains at most one character OR two props; a wall line with its hole counts as one prop and an annotation arrow counts as one prop.
+- CHARACTER LOCK applies to every cluster containing a character. Keep the verbatim identity sentence in every prompt, even when no character appears.
+- Keep LINE, FILL, palette and the bottom 18% subtitle safe zone unchanged.
+
+FIXED STYLE — the sections below are copied verbatim from references/style-lock.md:
+
+LINE:
+- Every contour is a single solid ink stroke in hex #24251F; no colored outlines.
+- Stroke width is constant at 6 px on a 1360 px wide canvas (0.44% of frame width); allowed range 6-8 px; 11-14 px only at corner joins and T-intersections.
+- Stroke ends are blunt round caps; no taper, no calligraphic thick-thin variation.
+- Hand tremor is minimal: a straight run may deviate at most +/-1 px per 100 px of length; no wavy oscillation, no nervous jitter.
+- No double contours, no overdrawn sketch lines, no hatching, no cross-hatching, no pencil noise, no dashed or broken lines anywhere.
+- Walls and planes are drawn as one single ink line, never as double lines, filled bands or shaded edges.
+
+FILL:
+- Every shape is one completely flat color: zero gradients, zero shading, zero highlights, zero cast shadows, zero texture, zero opacity variation.
+- Exact palette: paper #F8F6EF (background and interior of open shapes), ink #24251F (outlines, hair, dot eyes, optional trousers), cobalt #2855C7, sunflower #F0C541, tomato #D64B36, plus one flat natural skin tone #EDB894 used only on character skin.
+- Per-scene budget: paper and ink always; at most two large fills chosen from cobalt and sunflower; tomato reserved for annotation arrows or circles only, total tomato area at most 0.5% of the frame.
+- Fill edges sit exactly on the centerline of the ink outline: no white gap, no halo, no bleed outside the outline.
+- Background is 100% paper color: no scenery, no floor line, no horizon, no room, no sky, no wash; measured paper coverage of the locked reference is 87.3% of frame area.
+
+COMPOSITION:
+- Canvas aspect exactly 16:9; scene images at least 1920x1080, rendered at the highest resolution the image tool supports.
+- If the image tool cannot emit a true 16:9 frame, stop and report to the user; never generate a square image and never stretch one with ffmpeg.
+- Negative space: paper coverage at least 85% of frame area in every scene (locked reference measures 87.3%); 35% is the absolute rejection floor, not a target.
+- Subtitle safe zone: the bottom 18% of frame height (y >= 82% of height) contains zero non-paper pixels: no stroke, no fill, no arrow tip and no foot may cross into it (locked reference measures 0.000%).
+- Subject band: all characters and props sit inside y from 10% to 80% of frame height, with at least 15% paper margin on the left and right edges.
+- Per-cluster character and prop budgets follow REGION LAW.
+- Exactly one tomato #D64B36 annotation accent (arrow or circle) per scene, stroke 6-8 px, never labeled.
+- One coherent three-step story per scene; separate clusters with blank paper only, no panel dividers, no frames, no borders, no background scenery.
+
+FORBIDDEN: text, letters, numbers, logos, watermark, photorealism, 3D render, glossy shading, gradients, cast shadows, pastel children's-book look, sticker sheet, icon grid, collage, dense small parts, pencil noise.
+
+identical across every image in this series, do not reinterpret
+
+Technical constraints: aspect ratio exactly 16:9 (width = height x 16 / 9); render at the highest resolution the image tool supports and never below 1920x1080; if the tool cannot output a true 16:9 frame, stop and report to the user instead of generating a square or stretched image that ffmpeg would have to distort.

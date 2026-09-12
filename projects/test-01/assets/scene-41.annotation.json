@@ -1,0 +1,107 @@
+{
+  "sceneId": "test-01-scene-41",
+  "canvas": {
+    "width": 1920,
+    "height": 1080
+  },
+  "storyBasis": "to keep our brains cool under extreme survival pressure. Today, many of our modern sleep struggles stem from forgetting this ancestral biology. We trap ourselves in sealed rooms with artificial heatin",
+  "sceneDurationMs": 16041,
+  "elements": [
+    {
+      "id": "scene-41-left",
+      "label": "to keep our brains cool under extreme survival pressure. Today, many of our mode",
+      "sequence": 1,
+      "narrativeRole": "Bước 1/3: vẽ cột left từ trên xuống",
+      "subtitle": "to keep our brains cool under extreme survival pressure. Today, many of our modern sleep struggles stem from forgetting ",
+      "type": "story_island",
+      "region": {
+        "x": 0,
+        "y": 0,
+        "width": 595,
+        "height": 1080
+      },
+      "reveal": {
+        "direction": "top_to_bottom",
+        "startMs": 0,
+        "durationMs": 5080,
+        "maskPaddingPx": 0,
+        "protectedRegions": []
+      },
+      "handPath": {
+        "start": [
+          178,
+          324
+        ],
+        "end": [
+          446,
+          810
+        ],
+        "easing": "easeInOut"
+      }
+    },
+    {
+      "id": "scene-41-center",
+      "label": "to keep our brains cool under extreme survival pressure. Today, many of our mode",
+      "sequence": 2,
+      "narrativeRole": "Bước 2/3: vẽ cột center từ trên xuống",
+      "subtitle": "to keep our brains cool under extreme survival pressure. Today, many of our modern sleep struggles stem from forgetting ",
+      "type": "story_island",
+      "region": {
+        "x": 662,
+        "y": 0,
+        "width": 595,
+        "height": 1080
+      },
+      "reveal": {
+        "direction": "top_to_bottom",
+        "startMs": 5080,
+        "durationMs": 5080,
+        "maskPaddingPx": 0,
+        "protectedRegions": []
+      },
+      "handPath": {
+        "start": [
+          840,
+          324
+        ],
+        "end": [
+          1108,
+          810
+        ],
+        "easing": "easeInOut"
+      }
+    },
+    {
+      "id": "scene-41-right",
+      "label": "to keep our brains cool under extreme survival pressure. Today, many of our mode",
+      "sequence": 3,
+      "narrativeRole": "Bước 3/3: vẽ cột right từ trên xuống",
+      "subtitle": "to keep our brains cool under extreme survival pressure. Today, many of our modern sleep struggles stem from forgetting ",
+      "type": "story_island",
+      "region": {
+        "x": 1325,
+        "y": 0,
+        "width": 595,
+        "height": 1080
+      },
+      "reveal": {
+        "direction": "top_to_bottom",
+        "startMs": 10160,
+        "durationMs": 5081,
+        "maskPaddingPx": 0,
+        "protectedRegions": []
+      },
+      "handPath": {
+        "start": [
+          1503,
+          324
+        ],
+        "end": [
+          1771,
+          810
+        ],
+        "easing": "easeInOut"
+      }
+    }
+  ]
+}

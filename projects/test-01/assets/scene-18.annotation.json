@@ -1,0 +1,107 @@
+{
+  "sceneId": "test-01-scene-18",
+  "canvas": {
+    "width": 1920,
+    "height": 1080
+  },
+  "storyBasis": "But to Tanya, that limestone bedrock is a massive heatsink. Solid stone has a thermal conductivity vastly higher than loose dirt. When she lies down on bare limestone,",
+  "sceneDurationMs": 11770,
+  "elements": [
+    {
+      "id": "scene-18-left",
+      "label": "But to Tanya, that limestone bedrock is a massive heatsink. Solid stone has a th",
+      "sequence": 1,
+      "narrativeRole": "Bước 1/3: vẽ cột left từ trên xuống",
+      "subtitle": "But to Tanya, that limestone bedrock is a massive heatsink. Solid stone has a thermal conductivity vastly higher than lo",
+      "type": "story_island",
+      "region": {
+        "x": 0,
+        "y": 0,
+        "width": 595,
+        "height": 1080
+      },
+      "reveal": {
+        "direction": "top_to_bottom",
+        "startMs": 0,
+        "durationMs": 3656,
+        "maskPaddingPx": 0,
+        "protectedRegions": []
+      },
+      "handPath": {
+        "start": [
+          178,
+          324
+        ],
+        "end": [
+          446,
+          810
+        ],
+        "easing": "easeInOut"
+      }
+    },
+    {
+      "id": "scene-18-center",
+      "label": "But to Tanya, that limestone bedrock is a massive heatsink. Solid stone has a th",
+      "sequence": 2,
+      "narrativeRole": "Bước 2/3: vẽ cột center từ trên xuống",
+      "subtitle": "But to Tanya, that limestone bedrock is a massive heatsink. Solid stone has a thermal conductivity vastly higher than lo",
+      "type": "story_island",
+      "region": {
+        "x": 662,
+        "y": 0,
+        "width": 595,
+        "height": 1080
+      },
+      "reveal": {
+        "direction": "top_to_bottom",
+        "startMs": 3656,
+        "durationMs": 3657,
+        "maskPaddingPx": 0,
+        "protectedRegions": []
+      },
+      "handPath": {
+        "start": [
+          840,
+          324
+        ],
+        "end": [
+          1108,
+          810
+        ],
+        "easing": "easeInOut"
+      }
+    },
+    {
+      "id": "scene-18-right",
+      "label": "But to Tanya, that limestone bedrock is a massive heatsink. Solid stone has a th",
+      "sequence": 3,
+      "narrativeRole": "Bước 3/3: vẽ cột right từ trên xuống",
+      "subtitle": "But to Tanya, that limestone bedrock is a massive heatsink. Solid stone has a thermal conductivity vastly higher than lo",
+      "type": "story_island",
+      "region": {
+        "x": 1325,
+        "y": 0,
+        "width": 595,
+        "height": 1080
+      },
+      "reveal": {
+        "direction": "top_to_bottom",
+        "startMs": 7313,
+        "durationMs": 3657,
+        "maskPaddingPx": 0,
+        "protectedRegions": []
+      },
+      "handPath": {
+        "start": [
+          1503,
+          324
+        ],
+        "end": [
+          1771,
+          810
+        ],
+        "easing": "easeInOut"
+      }
+    }
+  ]
+}

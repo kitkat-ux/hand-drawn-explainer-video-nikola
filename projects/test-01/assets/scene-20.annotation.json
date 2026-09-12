@@ -1,0 +1,107 @@
+{
+  "sceneId": "test-01-scene-20",
+  "canvas": {
+    "width": 1920,
+    "height": 1080
+  },
+  "storyBasis": "Tanya doesn't sleep at the very back of the cave where stagnant air pools, nor at the exposed outer lip where predators roam. She positions her bedding at the narrow constriction point of the rock she",
+  "sceneDurationMs": 15520,
+  "elements": [
+    {
+      "id": "scene-20-left",
+      "label": "Tanya doesn't sleep at the very back of the cave where stagnant air pools, nor a",
+      "sequence": 1,
+      "narrativeRole": "Bước 1/3: vẽ cột left từ trên xuống",
+      "subtitle": "Tanya doesn't sleep at the very back of the cave where stagnant air pools, nor at the exposed outer lip where predators ",
+      "type": "story_island",
+      "region": {
+        "x": 0,
+        "y": 0,
+        "width": 595,
+        "height": 1080
+      },
+      "reveal": {
+        "direction": "top_to_bottom",
+        "startMs": 0,
+        "durationMs": 4906,
+        "maskPaddingPx": 0,
+        "protectedRegions": []
+      },
+      "handPath": {
+        "start": [
+          178,
+          324
+        ],
+        "end": [
+          446,
+          810
+        ],
+        "easing": "easeInOut"
+      }
+    },
+    {
+      "id": "scene-20-center",
+      "label": "Tanya doesn't sleep at the very back of the cave where stagnant air pools, nor a",
+      "sequence": 2,
+      "narrativeRole": "Bước 2/3: vẽ cột center từ trên xuống",
+      "subtitle": "Tanya doesn't sleep at the very back of the cave where stagnant air pools, nor at the exposed outer lip where predators ",
+      "type": "story_island",
+      "region": {
+        "x": 662,
+        "y": 0,
+        "width": 595,
+        "height": 1080
+      },
+      "reveal": {
+        "direction": "top_to_bottom",
+        "startMs": 4906,
+        "durationMs": 4907,
+        "maskPaddingPx": 0,
+        "protectedRegions": []
+      },
+      "handPath": {
+        "start": [
+          840,
+          324
+        ],
+        "end": [
+          1108,
+          810
+        ],
+        "easing": "easeInOut"
+      }
+    },
+    {
+      "id": "scene-20-right",
+      "label": "Tanya doesn't sleep at the very back of the cave where stagnant air pools, nor a",
+      "sequence": 3,
+      "narrativeRole": "Bước 3/3: vẽ cột right từ trên xuống",
+      "subtitle": "Tanya doesn't sleep at the very back of the cave where stagnant air pools, nor at the exposed outer lip where predators ",
+      "type": "story_island",
+      "region": {
+        "x": 1325,
+        "y": 0,
+        "width": 595,
+        "height": 1080
+      },
+      "reveal": {
+        "direction": "top_to_bottom",
+        "startMs": 9813,
+        "durationMs": 4907,
+        "maskPaddingPx": 0,
+        "protectedRegions": []
+      },
+      "handPath": {
+        "start": [
+          1503,
+          324
+        ],
+        "end": [
+          1771,
+          810
+        ],
+        "easing": "easeInOut"
+      }
+    }
+  ]
+}

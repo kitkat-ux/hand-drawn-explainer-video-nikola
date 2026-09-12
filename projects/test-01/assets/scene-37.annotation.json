@@ -1,0 +1,107 @@
+{
+  "sceneId": "test-01-scene-37",
+  "canvas": {
+    "width": 1920,
+    "height": 1080
+  },
+  "storyBasis": "most sophisticated cooling hardware on planet Earth: the human body itself. Over two million years of evolution, while other mammals retained thick fur coats and panting mechanisms, our ancestors shed",
+  "sceneDurationMs": 16200,
+  "elements": [
+    {
+      "id": "scene-37-left",
+      "label": "most sophisticated cooling hardware on planet Earth: the human body itself. Over",
+      "sequence": 1,
+      "narrativeRole": "Bước 1/3: vẽ cột left từ trên xuống",
+      "subtitle": "most sophisticated cooling hardware on planet Earth: the human body itself. Over two million years of evolution, while o",
+      "type": "story_island",
+      "region": {
+        "x": 0,
+        "y": 0,
+        "width": 595,
+        "height": 1080
+      },
+      "reveal": {
+        "direction": "top_to_bottom",
+        "startMs": 0,
+        "durationMs": 5133,
+        "maskPaddingPx": 0,
+        "protectedRegions": []
+      },
+      "handPath": {
+        "start": [
+          178,
+          324
+        ],
+        "end": [
+          446,
+          810
+        ],
+        "easing": "easeInOut"
+      }
+    },
+    {
+      "id": "scene-37-center",
+      "label": "most sophisticated cooling hardware on planet Earth: the human body itself. Over",
+      "sequence": 2,
+      "narrativeRole": "Bước 2/3: vẽ cột center từ trên xuống",
+      "subtitle": "most sophisticated cooling hardware on planet Earth: the human body itself. Over two million years of evolution, while o",
+      "type": "story_island",
+      "region": {
+        "x": 662,
+        "y": 0,
+        "width": 595,
+        "height": 1080
+      },
+      "reveal": {
+        "direction": "top_to_bottom",
+        "startMs": 5133,
+        "durationMs": 5133,
+        "maskPaddingPx": 0,
+        "protectedRegions": []
+      },
+      "handPath": {
+        "start": [
+          840,
+          324
+        ],
+        "end": [
+          1108,
+          810
+        ],
+        "easing": "easeInOut"
+      }
+    },
+    {
+      "id": "scene-37-right",
+      "label": "most sophisticated cooling hardware on planet Earth: the human body itself. Over",
+      "sequence": 3,
+      "narrativeRole": "Bước 3/3: vẽ cột right từ trên xuống",
+      "subtitle": "most sophisticated cooling hardware on planet Earth: the human body itself. Over two million years of evolution, while o",
+      "type": "story_island",
+      "region": {
+        "x": 1325,
+        "y": 0,
+        "width": 595,
+        "height": 1080
+      },
+      "reveal": {
+        "direction": "top_to_bottom",
+        "startMs": 10266,
+        "durationMs": 5134,
+        "maskPaddingPx": 0,
+        "protectedRegions": []
+      },
+      "handPath": {
+        "start": [
+          1503,
+          324
+        ],
+        "end": [
+          1771,
+          810
+        ],
+        "easing": "easeInOut"
+      }
+    }
+  ]
+}

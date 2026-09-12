@@ -1,0 +1,107 @@
+{
+  "sceneId": "test-01-scene-14",
+  "canvas": {
+    "width": 1920,
+    "height": 1080
+  },
+  "storyBasis": "The answer is that they didn't just endure the heat—they turned the geology of the landscape into an active thermal engine. Meet Tanya, a hunter-gatherer who has spent the last eight hours navigating ",
+  "sceneDurationMs": 15510,
+  "elements": [
+    {
+      "id": "scene-14-left",
+      "label": "The answer is that they didn't just endure the heat—they turned the geology of t",
+      "sequence": 1,
+      "narrativeRole": "Bước 1/3: vẽ cột left từ trên xuống",
+      "subtitle": "The answer is that they didn't just endure the heat—they turned the geology of the landscape into an active thermal engi",
+      "type": "story_island",
+      "region": {
+        "x": 0,
+        "y": 0,
+        "width": 595,
+        "height": 1080
+      },
+      "reveal": {
+        "direction": "top_to_bottom",
+        "startMs": 0,
+        "durationMs": 4903,
+        "maskPaddingPx": 0,
+        "protectedRegions": []
+      },
+      "handPath": {
+        "start": [
+          178,
+          324
+        ],
+        "end": [
+          446,
+          810
+        ],
+        "easing": "easeInOut"
+      }
+    },
+    {
+      "id": "scene-14-center",
+      "label": "The answer is that they didn't just endure the heat—they turned the geology of t",
+      "sequence": 2,
+      "narrativeRole": "Bước 2/3: vẽ cột center từ trên xuống",
+      "subtitle": "The answer is that they didn't just endure the heat—they turned the geology of the landscape into an active thermal engi",
+      "type": "story_island",
+      "region": {
+        "x": 662,
+        "y": 0,
+        "width": 595,
+        "height": 1080
+      },
+      "reveal": {
+        "direction": "top_to_bottom",
+        "startMs": 4903,
+        "durationMs": 4903,
+        "maskPaddingPx": 0,
+        "protectedRegions": []
+      },
+      "handPath": {
+        "start": [
+          840,
+          324
+        ],
+        "end": [
+          1108,
+          810
+        ],
+        "easing": "easeInOut"
+      }
+    },
+    {
+      "id": "scene-14-right",
+      "label": "The answer is that they didn't just endure the heat—they turned the geology of t",
+      "sequence": 3,
+      "narrativeRole": "Bước 3/3: vẽ cột right từ trên xuống",
+      "subtitle": "The answer is that they didn't just endure the heat—they turned the geology of the landscape into an active thermal engi",
+      "type": "story_island",
+      "region": {
+        "x": 1325,
+        "y": 0,
+        "width": 595,
+        "height": 1080
+      },
+      "reveal": {
+        "direction": "top_to_bottom",
+        "startMs": 9806,
+        "durationMs": 4904,
+        "maskPaddingPx": 0,
+        "protectedRegions": []
+      },
+      "handPath": {
+        "start": [
+          1503,
+          324
+        ],
+        "end": [
+          1771,
+          810
+        ],
+        "easing": "easeInOut"
+      }
+    }
+  ]
+}

@@ -1,0 +1,107 @@
+{
+  "sceneId": "test-01-scene-42",
+  "canvas": {
+    "width": 1920,
+    "height": 1080
+  },
+  "storyBasis": "sleep on synthetic foam mattresses that trap heat against our backs, and stare into glowing blue screens that trick our brains into thinking it's midday. Our bodies still expect the natural temperatur",
+  "sceneDurationMs": 14940,
+  "elements": [
+    {
+      "id": "scene-42-left",
+      "label": "sleep on synthetic foam mattresses that trap heat against our backs, and stare i",
+      "sequence": 1,
+      "narrativeRole": "Bước 1/3: vẽ cột left từ trên xuống",
+      "subtitle": "sleep on synthetic foam mattresses that trap heat against our backs, and stare into glowing blue screens that trick our ",
+      "type": "story_island",
+      "region": {
+        "x": 0,
+        "y": 0,
+        "width": 595,
+        "height": 1080
+      },
+      "reveal": {
+        "direction": "top_to_bottom",
+        "startMs": 0,
+        "durationMs": 4713,
+        "maskPaddingPx": 0,
+        "protectedRegions": []
+      },
+      "handPath": {
+        "start": [
+          178,
+          324
+        ],
+        "end": [
+          446,
+          810
+        ],
+        "easing": "easeInOut"
+      }
+    },
+    {
+      "id": "scene-42-center",
+      "label": "sleep on synthetic foam mattresses that trap heat against our backs, and stare i",
+      "sequence": 2,
+      "narrativeRole": "Bước 2/3: vẽ cột center từ trên xuống",
+      "subtitle": "sleep on synthetic foam mattresses that trap heat against our backs, and stare into glowing blue screens that trick our ",
+      "type": "story_island",
+      "region": {
+        "x": 662,
+        "y": 0,
+        "width": 595,
+        "height": 1080
+      },
+      "reveal": {
+        "direction": "top_to_bottom",
+        "startMs": 4713,
+        "durationMs": 4713,
+        "maskPaddingPx": 0,
+        "protectedRegions": []
+      },
+      "handPath": {
+        "start": [
+          840,
+          324
+        ],
+        "end": [
+          1108,
+          810
+        ],
+        "easing": "easeInOut"
+      }
+    },
+    {
+      "id": "scene-42-right",
+      "label": "sleep on synthetic foam mattresses that trap heat against our backs, and stare i",
+      "sequence": 3,
+      "narrativeRole": "Bước 3/3: vẽ cột right từ trên xuống",
+      "subtitle": "sleep on synthetic foam mattresses that trap heat against our backs, and stare into glowing blue screens that trick our ",
+      "type": "story_island",
+      "region": {
+        "x": 1325,
+        "y": 0,
+        "width": 595,
+        "height": 1080
+      },
+      "reveal": {
+        "direction": "top_to_bottom",
+        "startMs": 9426,
+        "durationMs": 4714,
+        "maskPaddingPx": 0,
+        "protectedRegions": []
+      },
+      "handPath": {
+        "start": [
+          1503,
+          324
+        ],
+        "end": [
+          1771,
+          810
+        ],
+        "easing": "easeInOut"
+      }
+    }
+  ]
+}

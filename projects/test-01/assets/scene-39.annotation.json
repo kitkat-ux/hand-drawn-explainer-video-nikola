@@ -1,0 +1,107 @@
+{
+  "sceneId": "test-01-scene-39",
+  "canvas": {
+    "width": 1920,
+    "height": 1080
+  },
+  "storyBasis": "Even more remarkable is what neuro-anatomists call the Cranial Radiator. As our hominin ancestors evolved massive, heat-sensitive brains, our skulls evolved a complex network of tiny emissary veins.",
+  "sceneDurationMs": 14800,
+  "elements": [
+    {
+      "id": "scene-39-left",
+      "label": "Even more remarkable is what neuro-anatomists call the Cranial Radiator. As our ",
+      "sequence": 1,
+      "narrativeRole": "Bước 1/3: vẽ cột left từ trên xuống",
+      "subtitle": "Even more remarkable is what neuro-anatomists call the Cranial Radiator. As our hominin ancestors evolved massive, heat-",
+      "type": "story_island",
+      "region": {
+        "x": 0,
+        "y": 0,
+        "width": 595,
+        "height": 1080
+      },
+      "reveal": {
+        "direction": "top_to_bottom",
+        "startMs": 0,
+        "durationMs": 4666,
+        "maskPaddingPx": 0,
+        "protectedRegions": []
+      },
+      "handPath": {
+        "start": [
+          178,
+          324
+        ],
+        "end": [
+          446,
+          810
+        ],
+        "easing": "easeInOut"
+      }
+    },
+    {
+      "id": "scene-39-center",
+      "label": "Even more remarkable is what neuro-anatomists call the Cranial Radiator. As our ",
+      "sequence": 2,
+      "narrativeRole": "Bước 2/3: vẽ cột center từ trên xuống",
+      "subtitle": "Even more remarkable is what neuro-anatomists call the Cranial Radiator. As our hominin ancestors evolved massive, heat-",
+      "type": "story_island",
+      "region": {
+        "x": 662,
+        "y": 0,
+        "width": 595,
+        "height": 1080
+      },
+      "reveal": {
+        "direction": "top_to_bottom",
+        "startMs": 4666,
+        "durationMs": 4667,
+        "maskPaddingPx": 0,
+        "protectedRegions": []
+      },
+      "handPath": {
+        "start": [
+          840,
+          324
+        ],
+        "end": [
+          1108,
+          810
+        ],
+        "easing": "easeInOut"
+      }
+    },
+    {
+      "id": "scene-39-right",
+      "label": "Even more remarkable is what neuro-anatomists call the Cranial Radiator. As our ",
+      "sequence": 3,
+      "narrativeRole": "Bước 3/3: vẽ cột right từ trên xuống",
+      "subtitle": "Even more remarkable is what neuro-anatomists call the Cranial Radiator. As our hominin ancestors evolved massive, heat-",
+      "type": "story_island",
+      "region": {
+        "x": 1325,
+        "y": 0,
+        "width": 595,
+        "height": 1080
+      },
+      "reveal": {
+        "direction": "top_to_bottom",
+        "startMs": 9333,
+        "durationMs": 4667,
+        "maskPaddingPx": 0,
+        "protectedRegions": []
+      },
+      "handPath": {
+        "start": [
+          1503,
+          324
+        ],
+        "end": [
+          1771,
+          810
+        ],
+        "easing": "easeInOut"
+      }
+    }
+  ]
+}

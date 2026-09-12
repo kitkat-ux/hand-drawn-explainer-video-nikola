@@ -1,0 +1,107 @@
+{
+  "sceneId": "test-01-scene-21",
+  "canvas": {
+    "width": 1920,
+    "height": 1080
+  },
+  "storyBasis": "it sinks into the canyon and draws through the cave entrance. The narrowing rock creates a natural Venturi effect, accelerating subtle breezes across the sleeping area to maximize convective sweat eva",
+  "sceneDurationMs": 14720,
+  "elements": [
+    {
+      "id": "scene-21-left",
+      "label": "it sinks into the canyon and draws through the cave entrance. The narrowing rock",
+      "sequence": 1,
+      "narrativeRole": "Bước 1/3: vẽ cột left từ trên xuống",
+      "subtitle": "it sinks into the canyon and draws through the cave entrance. The narrowing rock creates a natural Venturi effect, accel",
+      "type": "story_island",
+      "region": {
+        "x": 0,
+        "y": 0,
+        "width": 595,
+        "height": 1080
+      },
+      "reveal": {
+        "direction": "top_to_bottom",
+        "startMs": 0,
+        "durationMs": 4640,
+        "maskPaddingPx": 0,
+        "protectedRegions": []
+      },
+      "handPath": {
+        "start": [
+          178,
+          324
+        ],
+        "end": [
+          446,
+          810
+        ],
+        "easing": "easeInOut"
+      }
+    },
+    {
+      "id": "scene-21-center",
+      "label": "it sinks into the canyon and draws through the cave entrance. The narrowing rock",
+      "sequence": 2,
+      "narrativeRole": "Bước 2/3: vẽ cột center từ trên xuống",
+      "subtitle": "it sinks into the canyon and draws through the cave entrance. The narrowing rock creates a natural Venturi effect, accel",
+      "type": "story_island",
+      "region": {
+        "x": 662,
+        "y": 0,
+        "width": 595,
+        "height": 1080
+      },
+      "reveal": {
+        "direction": "top_to_bottom",
+        "startMs": 4640,
+        "durationMs": 4640,
+        "maskPaddingPx": 0,
+        "protectedRegions": []
+      },
+      "handPath": {
+        "start": [
+          840,
+          324
+        ],
+        "end": [
+          1108,
+          810
+        ],
+        "easing": "easeInOut"
+      }
+    },
+    {
+      "id": "scene-21-right",
+      "label": "it sinks into the canyon and draws through the cave entrance. The narrowing rock",
+      "sequence": 3,
+      "narrativeRole": "Bước 3/3: vẽ cột right từ trên xuống",
+      "subtitle": "it sinks into the canyon and draws through the cave entrance. The narrowing rock creates a natural Venturi effect, accel",
+      "type": "story_island",
+      "region": {
+        "x": 1325,
+        "y": 0,
+        "width": 595,
+        "height": 1080
+      },
+      "reveal": {
+        "direction": "top_to_bottom",
+        "startMs": 9280,
+        "durationMs": 4640,
+        "maskPaddingPx": 0,
+        "protectedRegions": []
+      },
+      "handPath": {
+        "start": [
+          1503,
+          324
+        ],
+        "end": [
+          1771,
+          810
+        ],
+        "easing": "easeInOut"
+      }
+    }
+  ]
+}

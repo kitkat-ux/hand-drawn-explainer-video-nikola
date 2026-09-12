@@ -1,0 +1,107 @@
+{
+  "sceneId": "test-01-scene-03",
+  "canvas": {
+    "width": 1920,
+    "height": 1080
+  },
+  "storyBasis": "during the scorching dry seasons of equatorial Africa, midnight brought no relief. The sun had set hours ago, yet the ambient air remained trapped at a suffocating thirty-six degrees Celsius.",
+  "sceneDurationMs": 13620,
+  "elements": [
+    {
+      "id": "scene-03-left",
+      "label": "during the scorching dry seasons of equatorial Africa, midnight brought no relie",
+      "sequence": 1,
+      "narrativeRole": "Bước 1/3: vẽ cột left từ trên xuống",
+      "subtitle": "during the scorching dry seasons of equatorial Africa, midnight brought no relief. The sun had set hours ago, yet the am",
+      "type": "story_island",
+      "region": {
+        "x": 0,
+        "y": 0,
+        "width": 595,
+        "height": 1080
+      },
+      "reveal": {
+        "direction": "top_to_bottom",
+        "startMs": 0,
+        "durationMs": 4273,
+        "maskPaddingPx": 0,
+        "protectedRegions": []
+      },
+      "handPath": {
+        "start": [
+          178,
+          324
+        ],
+        "end": [
+          446,
+          810
+        ],
+        "easing": "easeInOut"
+      }
+    },
+    {
+      "id": "scene-03-center",
+      "label": "during the scorching dry seasons of equatorial Africa, midnight brought no relie",
+      "sequence": 2,
+      "narrativeRole": "Bước 2/3: vẽ cột center từ trên xuống",
+      "subtitle": "during the scorching dry seasons of equatorial Africa, midnight brought no relief. The sun had set hours ago, yet the am",
+      "type": "story_island",
+      "region": {
+        "x": 662,
+        "y": 0,
+        "width": 595,
+        "height": 1080
+      },
+      "reveal": {
+        "direction": "top_to_bottom",
+        "startMs": 4273,
+        "durationMs": 4273,
+        "maskPaddingPx": 0,
+        "protectedRegions": []
+      },
+      "handPath": {
+        "start": [
+          840,
+          324
+        ],
+        "end": [
+          1108,
+          810
+        ],
+        "easing": "easeInOut"
+      }
+    },
+    {
+      "id": "scene-03-right",
+      "label": "during the scorching dry seasons of equatorial Africa, midnight brought no relie",
+      "sequence": 3,
+      "narrativeRole": "Bước 3/3: vẽ cột right từ trên xuống",
+      "subtitle": "during the scorching dry seasons of equatorial Africa, midnight brought no relief. The sun had set hours ago, yet the am",
+      "type": "story_island",
+      "region": {
+        "x": 1325,
+        "y": 0,
+        "width": 595,
+        "height": 1080
+      },
+      "reveal": {
+        "direction": "top_to_bottom",
+        "startMs": 8546,
+        "durationMs": 4274,
+        "maskPaddingPx": 0,
+        "protectedRegions": []
+      },
+      "handPath": {
+        "start": [
+          1503,
+          324
+        ],
+        "end": [
+          1771,
+          810
+        ],
+        "easing": "easeInOut"
+      }
+    }
+  ]
+}

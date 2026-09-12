@@ -1,0 +1,107 @@
+{
+  "sceneId": "test-01-scene-28",
+  "canvas": {
+    "width": 1920,
+    "height": 1080
+  },
+  "storyBasis": "Anthropological studies of modern tropical hunter-gatherers—like the Hadza of Tanzania and the San of the Kalahari—reveal that continuous monophasic sleep is largely an invention of modern industrial ",
+  "sceneDurationMs": 15760,
+  "elements": [
+    {
+      "id": "scene-28-left",
+      "label": "Anthropological studies of modern tropical hunter-gatherers—like the Hadza of Ta",
+      "sequence": 1,
+      "narrativeRole": "Bước 1/3: vẽ cột left từ trên xuống",
+      "subtitle": "Anthropological studies of modern tropical hunter-gatherers—like the Hadza of Tanzania and the San of the Kalahari—revea",
+      "type": "story_island",
+      "region": {
+        "x": 0,
+        "y": 0,
+        "width": 595,
+        "height": 1080
+      },
+      "reveal": {
+        "direction": "top_to_bottom",
+        "startMs": 0,
+        "durationMs": 4986,
+        "maskPaddingPx": 0,
+        "protectedRegions": []
+      },
+      "handPath": {
+        "start": [
+          178,
+          324
+        ],
+        "end": [
+          446,
+          810
+        ],
+        "easing": "easeInOut"
+      }
+    },
+    {
+      "id": "scene-28-center",
+      "label": "Anthropological studies of modern tropical hunter-gatherers—like the Hadza of Ta",
+      "sequence": 2,
+      "narrativeRole": "Bước 2/3: vẽ cột center từ trên xuống",
+      "subtitle": "Anthropological studies of modern tropical hunter-gatherers—like the Hadza of Tanzania and the San of the Kalahari—revea",
+      "type": "story_island",
+      "region": {
+        "x": 662,
+        "y": 0,
+        "width": 595,
+        "height": 1080
+      },
+      "reveal": {
+        "direction": "top_to_bottom",
+        "startMs": 4986,
+        "durationMs": 4987,
+        "maskPaddingPx": 0,
+        "protectedRegions": []
+      },
+      "handPath": {
+        "start": [
+          840,
+          324
+        ],
+        "end": [
+          1108,
+          810
+        ],
+        "easing": "easeInOut"
+      }
+    },
+    {
+      "id": "scene-28-right",
+      "label": "Anthropological studies of modern tropical hunter-gatherers—like the Hadza of Ta",
+      "sequence": 3,
+      "narrativeRole": "Bước 3/3: vẽ cột right từ trên xuống",
+      "subtitle": "Anthropological studies of modern tropical hunter-gatherers—like the Hadza of Tanzania and the San of the Kalahari—revea",
+      "type": "story_island",
+      "region": {
+        "x": 1325,
+        "y": 0,
+        "width": 595,
+        "height": 1080
+      },
+      "reveal": {
+        "direction": "top_to_bottom",
+        "startMs": 9973,
+        "durationMs": 4987,
+        "maskPaddingPx": 0,
+        "protectedRegions": []
+      },
+      "handPath": {
+        "start": [
+          1503,
+          324
+        ],
+        "end": [
+          1771,
+          810
+        ],
+        "easing": "easeInOut"
+      }
+    }
+  ]
+}

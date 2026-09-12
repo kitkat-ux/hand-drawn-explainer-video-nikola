@@ -1,0 +1,107 @@
+{
+  "sceneId": "test-01-scene-44",
+  "canvas": {
+    "width": 1920,
+    "height": 1080
+  },
+  "storyBasis": "mastering botanical chemistry, and aligning their lives with the rhythm of the planet. The next time you enjoy a cool night's sleep, remember: you are carrying the genetic legacy of ancestors who",
+  "sceneDurationMs": 12779,
+  "elements": [
+    {
+      "id": "scene-44-left",
+      "label": "mastering botanical chemistry, and aligning their lives with the rhythm of the p",
+      "sequence": 1,
+      "narrativeRole": "Bước 1/3: vẽ cột left từ trên xuống",
+      "subtitle": "mastering botanical chemistry, and aligning their lives with the rhythm of the planet. The next time you enjoy a cool ni",
+      "type": "story_island",
+      "region": {
+        "x": 0,
+        "y": 0,
+        "width": 595,
+        "height": 1080
+      },
+      "reveal": {
+        "direction": "top_to_bottom",
+        "startMs": 0,
+        "durationMs": 3993,
+        "maskPaddingPx": 0,
+        "protectedRegions": []
+      },
+      "handPath": {
+        "start": [
+          178,
+          324
+        ],
+        "end": [
+          446,
+          810
+        ],
+        "easing": "easeInOut"
+      }
+    },
+    {
+      "id": "scene-44-center",
+      "label": "mastering botanical chemistry, and aligning their lives with the rhythm of the p",
+      "sequence": 2,
+      "narrativeRole": "Bước 2/3: vẽ cột center từ trên xuống",
+      "subtitle": "mastering botanical chemistry, and aligning their lives with the rhythm of the planet. The next time you enjoy a cool ni",
+      "type": "story_island",
+      "region": {
+        "x": 662,
+        "y": 0,
+        "width": 595,
+        "height": 1080
+      },
+      "reveal": {
+        "direction": "top_to_bottom",
+        "startMs": 3993,
+        "durationMs": 3993,
+        "maskPaddingPx": 0,
+        "protectedRegions": []
+      },
+      "handPath": {
+        "start": [
+          840,
+          324
+        ],
+        "end": [
+          1108,
+          810
+        ],
+        "easing": "easeInOut"
+      }
+    },
+    {
+      "id": "scene-44-right",
+      "label": "mastering botanical chemistry, and aligning their lives with the rhythm of the p",
+      "sequence": 3,
+      "narrativeRole": "Bước 3/3: vẽ cột right từ trên xuống",
+      "subtitle": "mastering botanical chemistry, and aligning their lives with the rhythm of the planet. The next time you enjoy a cool ni",
+      "type": "story_island",
+      "region": {
+        "x": 1325,
+        "y": 0,
+        "width": 595,
+        "height": 1080
+      },
+      "reveal": {
+        "direction": "top_to_bottom",
+        "startMs": 7986,
+        "durationMs": 3993,
+        "maskPaddingPx": 0,
+        "protectedRegions": []
+      },
+      "handPath": {
+        "start": [
+          1503,
+          324
+        ],
+        "end": [
+          1771,
+          810
+        ],
+        "easing": "easeInOut"
+      }
+    }
+  ]
+}

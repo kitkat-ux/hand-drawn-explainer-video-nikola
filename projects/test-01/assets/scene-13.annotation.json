@@ -1,0 +1,107 @@
+{
+  "sceneId": "test-01-scene-13",
+  "canvas": {
+    "width": 1920,
+    "height": 1080
+  },
+  "storyBasis": "or collapsed from heat-induced dehydration during midday tracking. Chronic insomnia was not a nuisance—it was fatal. So how did ancient humans survive hundreds of thousands of equatorial summers witho",
+  "sceneDurationMs": 16230,
+  "elements": [
+    {
+      "id": "scene-13-left",
+      "label": "or collapsed from heat-induced dehydration during midday tracking. Chronic insom",
+      "sequence": 1,
+      "narrativeRole": "Bước 1/3: vẽ cột left từ trên xuống",
+      "subtitle": "or collapsed from heat-induced dehydration during midday tracking. Chronic insomnia was not a nuisance—it was fatal. So ",
+      "type": "story_island",
+      "region": {
+        "x": 0,
+        "y": 0,
+        "width": 595,
+        "height": 1080
+      },
+      "reveal": {
+        "direction": "top_to_bottom",
+        "startMs": 0,
+        "durationMs": 5143,
+        "maskPaddingPx": 0,
+        "protectedRegions": []
+      },
+      "handPath": {
+        "start": [
+          178,
+          324
+        ],
+        "end": [
+          446,
+          810
+        ],
+        "easing": "easeInOut"
+      }
+    },
+    {
+      "id": "scene-13-center",
+      "label": "or collapsed from heat-induced dehydration during midday tracking. Chronic insom",
+      "sequence": 2,
+      "narrativeRole": "Bước 2/3: vẽ cột center từ trên xuống",
+      "subtitle": "or collapsed from heat-induced dehydration during midday tracking. Chronic insomnia was not a nuisance—it was fatal. So ",
+      "type": "story_island",
+      "region": {
+        "x": 662,
+        "y": 0,
+        "width": 595,
+        "height": 1080
+      },
+      "reveal": {
+        "direction": "top_to_bottom",
+        "startMs": 5143,
+        "durationMs": 5143,
+        "maskPaddingPx": 0,
+        "protectedRegions": []
+      },
+      "handPath": {
+        "start": [
+          840,
+          324
+        ],
+        "end": [
+          1108,
+          810
+        ],
+        "easing": "easeInOut"
+      }
+    },
+    {
+      "id": "scene-13-right",
+      "label": "or collapsed from heat-induced dehydration during midday tracking. Chronic insom",
+      "sequence": 3,
+      "narrativeRole": "Bước 3/3: vẽ cột right từ trên xuống",
+      "subtitle": "or collapsed from heat-induced dehydration during midday tracking. Chronic insomnia was not a nuisance—it was fatal. So ",
+      "type": "story_island",
+      "region": {
+        "x": 1325,
+        "y": 0,
+        "width": 595,
+        "height": 1080
+      },
+      "reveal": {
+        "direction": "top_to_bottom",
+        "startMs": 10286,
+        "durationMs": 5144,
+        "maskPaddingPx": 0,
+        "protectedRegions": []
+      },
+      "handPath": {
+        "start": [
+          1503,
+          324
+        ],
+        "end": [
+          1771,
+          810
+        ],
+        "easing": "easeInOut"
+      }
+    }
+  ]
+}
