@@ -1,0 +1,7 @@
+1
+00:00:00,300 --> 00:00:03,500
+[SRT giữ chỗ] Thay bằng phụ đề tiếng Việt thật của bạn.
+
+2
+00:00:03,700 --> 00:00:07,000
+Timestamp của SRT sẽ khóa timeline và phụ đề ASS.

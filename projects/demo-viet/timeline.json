@@ -1,0 +1,20 @@
+{
+  "duration": 8.0,
+  "audio_duration": 8.0,
+  "narration_text": "Thử nghiệm hiệu ứng nét vẽ hoạt họa Font chữ tiếng Việt hiển thị chuẩn xác",
+  "alignment": "srt_cue_timestamps",
+  "scenes": [
+    {
+      "n": 1,
+      "start": 0.0,
+      "end": 3.8,
+      "caption": "Thử nghiệm hiệu ứng nét vẽ hoạt họa"
+    },
+    {
+      "n": 2,
+      "start": 3.8,
+      "end": 8.0,
+      "caption": "Font chữ tiếng Việt hiển thị chuẩn xác"
+    }
+  ]
+}

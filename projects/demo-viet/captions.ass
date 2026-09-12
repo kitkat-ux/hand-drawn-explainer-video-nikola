@@ -1,0 +1,15 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1920
+PlayResY: 1080
+WrapStyle: 0
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Subtitle,Be Vietnam Pro,48,&H001F2524,&H000000FF,&H00EFF6F8,&H66000000,-1,0,0,0,100,100,0,0,1,3,1,2,120,120,58,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.30,0:00:03.80,Subtitle,,0,0,0,,Thử nghiệm hiệu ứng nét vẽ hoạt họa
+Dialogue: 0,0:00:04.00,0:00:07.60,Subtitle,,0,0,0,,Font chữ tiếng Việt hiển thị chuẩn xác

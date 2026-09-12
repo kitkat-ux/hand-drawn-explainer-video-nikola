@@ -1,0 +1,2 @@
+Thử nghiệm hiệu ứng nét vẽ hoạt họa.
+Font chữ tiếng Việt hiển thị chuẩn xác.

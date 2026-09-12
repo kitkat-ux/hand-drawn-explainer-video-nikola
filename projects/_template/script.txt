@@ -1,0 +1,3 @@
+[KỊCH BẢN GIỮ CHỖ — thay bằng kịch bản gốc của bạn, UTF-8.]
+Mỗi câu trong kịch bản nên tương ứng một cue trong captions.srt.
+Không xóa quan điểm, số liệu, hạn định từ khi biên tập lại để đọc.

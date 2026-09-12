@@ -1,0 +1,7 @@
+1
+00:00:00,300 --> 00:00:03,800
+Thử nghiệm hiệu ứng nét vẽ hoạt họa
+
+2
+00:00:04,000 --> 00:00:07,600
+Font chữ tiếng Việt hiển thị chuẩn xác
