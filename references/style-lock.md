@@ -62,4 +62,6 @@ The character is a chibi girl with a black ink #24251F bob haircut with side-swe
 - Layout A: full-body character offset into the left or right third of the frame; all props on the opposite side; character width at most 45% of frame width.
 - Layout B: close-up of one object or tool only; no character appears in the frame; the object fills at most 50% of frame width; the single tomato annotation accent may point at it.
 - Layout C: half-body character cropped at the waist (no legs visible) with one oversized prop on the side opposite the character's facing direction.
-- Every layout keeps the CHARACTER LOCK sentence, the palette, the stroke width and the subtitle safe zone unchanged; Layout B still carries the CHARACTER LOCK sentence in its prompt so any body part that appears stays identical.
+- Every layout keeps the CHARACTER LOCK sentence, the palette, the stroke width and the subtitle safe zone unchanged.
+- Layout B has NO character in the frame; the CHARACTER LOCK sentence is included only as a style anchor for line width, palette and fill, and must NOT cause any character or body part to be drawn.
+- Scene prompts carry only the chosen layout block ("THIS SCENE USES LAYOUT X. Ignore the rules for layouts ..." plus the verbatim description of that layout), computed as layout = "ABC"[(scene index - 1) modulo 3]; the image model must never infer the layout itself.
