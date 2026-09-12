@@ -28,7 +28,7 @@ model-cache/
 
 # ── Single-folder video projects (projects/*/) ──
 # ĐƯỢC track: script.txt, captions.srt, narration.mp3/.wav/.m4a, assets/*.png (line-art),
-# final.mp4 và các file text dẫn xuất nhỏ (timeline.json, captions.ass, annotation, prompt, DESIGN.md).
+# các file text dẫn xuất nhỏ (timeline.json, captions.ass, annotation, prompt, DESIGN.md).
 # BỎ QUA: cache render frame tạm, folder frame PNG trung gian, cache ffmpeg, video trung gian.
 *.raw
 projects/*/render/
@@ -39,3 +39,6 @@ projects/*/cache/
 ffmpeg-cache/
 projects/*/contact.jpg
 projects/*/stroke-finalize.json
+
+# Video thành phẩm lấy qua /download-workspace, không commit.
+projects/*/final.mp4

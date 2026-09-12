@@ -29,7 +29,7 @@ MEASUREMENT CONVENTION (applies to every number in this file and to every future
 
 ## Character
 
-- One chibi girl; proportions follow the MEASUREMENT CONVENTION above.
+- The same chibi girl wherever a character appears; proportions follow the MEASUREMENT CONVENTION above.
 - Proportion: 2.2 heads tall including bob hair (locked reference measures 434 px body height and 202 px head unit on a 765 px tall canvas). The face-height count (140 px face, about 3.1 face-heights per body) is recorded only to forbid its use as the head unit.
 - Hair: flat ink #24251F bob with side-swept fringe covering the forehead, bob ends curling inward at chin level; the hair is one solid flat shape with no strand lines.
 - Eyes: exactly two vertical-oval solid ink dots, each about 10 x 15 px on a 1360 px wide canvas, spaced about 53 px apart at mid-face height; no eyebrows, no lashes, no eye white, no pupil highlight.
@@ -46,9 +46,9 @@ MEASUREMENT CONVENTION (applies to every number in this file and to every future
 - Negative space: paper coverage at least 85% of frame area in every scene (locked reference measures 87.3%); 35% is the absolute rejection floor, not a target.
 - Subtitle safe zone: the bottom 18% of frame height (y >= 82% of height) contains zero non-paper pixels: no stroke, no fill, no arrow tip and no foot may cross into it (locked reference measures 0.000%).
 - Subject band: all characters and props sit inside y from 10% to 80% of frame height, with at least 15% paper margin on the left and right edges.
-- Maximum 3 props per scene; a wall line with its hole counts as one prop; an annotation arrow counts as one prop.
+- Per-cluster character and prop budgets follow REGION LAW.
 - Exactly one tomato #D64B36 annotation accent (arrow or circle) per scene, stroke 6-8 px, never labeled.
-- One action per scene; no collage, no panel splits, no frames, no borders, no background scenery.
+- One coherent three-step story per scene; separate clusters with blank paper only, no panel dividers, no frames, no borders, no background scenery.
 
 ## CHARACTER LOCK
 
@@ -56,12 +56,11 @@ The sentence below is the character identity law. It must appear verbatim, in fu
 
 The character is a chibi girl with a black ink #24251F bob haircut with side-swept fringe, wearing a flat sunflower #F0C541 short-sleeve shirt and flat cobalt #2855C7 trousers, with flat natural skin tone #EDB894, two small vertical-oval ink dot eyes and one tiny horizontal line mouth, about 2.2 heads tall including bob hair, drawn with constant-width blunt ink outlines and completely flat fills.
 
-## COMPOSITION LAW
+## REGION LAW
 
-- The layout cycle repeats every 3 scenes, chosen by scene index modulo 3 (scene-01 = A, scene-02 = B, scene-03 = C, scene-04 = A, and so on).
-- Layout A: full-body character offset into the left or right third of the frame; all props on the opposite side; character width at most 45% of frame width.
-- Layout B: close-up of one object or tool only; no character appears in the frame; the object fills at most 50% of frame width; the single tomato annotation accent may point at it.
-- Layout C: half-body character cropped at the waist (no legs visible) with one oversized prop on the side opposite the character's facing direction.
-- Every layout keeps the CHARACTER LOCK sentence, the palette, the stroke width and the subtitle safe zone unchanged.
-- Layout B has NO character in the frame; the CHARACTER LOCK sentence is included only as a style anchor for line width, palette and fill, and must NOT cause any character or body part to be drawn.
-- Scene prompts carry only the chosen layout block ("THIS SCENE USES LAYOUT X. Ignore the rules for layouts ..." plus the verbatim description of that layout), computed as layout = "ABC"[(scene index - 1) modulo 3]; the image model must never infer the layout itself.
+- Every image contains exactly three separate clusters arranged in left / center / right vertical columns.
+- Column bounds are x=0%, 34.5%, 69%, each 31% of frame width. Keep all ink and fills inside their own column, inset enough to leave full-height vertical paper #F8F6EF gutters at least 4% of frame width between clusters; no stroke, arrow or object may bridge a gutter.
+- The three clusters tell one coherent three-step sequence, read from left to right; one step per cluster.
+- Each cluster contains at most one character OR two props; a wall line with its hole counts as one prop and an annotation arrow counts as one prop.
+- CHARACTER LOCK applies to every cluster containing a character. Keep the verbatim identity sentence in every prompt, even when no character appears.
+- Keep LINE, FILL, palette and the bottom 18% subtitle safe zone unchanged.

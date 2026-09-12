@@ -33,13 +33,13 @@
 
 ## Luật nét vẽ / tốc độ tay
 
-- Cảnh nào tay vẽ quá nhanh (nét hoàn thành sớm hơn hẳn lời thoại): **sinh lại ảnh nguồn ĐƠN GIẢN HƠN** cho cảnh đó (bớt đạo cụ, bớt vùng, nét thưa hơn) rồi chạy lại `run_project.py`.
+- Cảnh nào tay vẽ quá nhanh (nét hoàn thành sớm hơn hẳn lời thoại): **sinh lại ảnh nguồn ĐƠN GIẢN HƠN** cho cảnh đó (bớt đạo cụ, giữ đúng 3 vùng, nét thưa hơn) rồi chạy lại `run_project.py`.
 - **Không rút ngắn nét**, không cắt reveal, không dùng hand-follow để giả nét chậm, không kéo dài thời gian cảnh trái `timeline.json` đã khớp audio.
 
 ## Style
 
-- Mọi ảnh nguồn sinh qua prompt mà `scripts/run_project.py` ghi vào `assets/scene-NN.prompt.txt` (đã nhúng FIXED STYLE + CHARACTER LOCK + COMPOSITION LAW + FORBIDDEN từ `references/style-lock.md`).
-- Bố cục cảnh theo chu kỳ 3 (A/B/C) trong mục COMPOSITION LAW của style-lock; giữ nguyên CHARACTER LOCK ở mọi cảnh kể cả cảnh không có nhân vật.
+- Mọi ảnh nguồn sinh qua prompt mà `scripts/run_project.py` ghi vào `assets/scene-NN.prompt.txt` (đã nhúng FIXED STYLE + CHARACTER LOCK + REGION LAW + FORBIDDEN từ `references/style-lock.md`).
+- Mỗi ảnh đúng 3 cụm cột trái / giữa / phải kể chuỗi 3 bước; mỗi cụm tối đa 1 nhân vật hoặc 2 đạo cụ. Rãnh dọc paper color ≥4% chiều rộng, không nét bắc ngang. CHARACTER LOCK áp dụng cho mọi cụm có nhân vật; vẫn giữ nguyên câu khóa trong mọi prompt kể cả khi không có nhân vật. Giữ LINE, FILL, palette và vùng an toàn phụ đề 18%.
 - Ảnh nguồn phải đúng 16:9 và ≥1920x1080; công cụ sinh ảnh không ra được 16:9 thì BÁO user, không sinh ảnh vuông rồi kéo méo bằng ffmpeg.
 
 ## Đồng bộ GitHub
