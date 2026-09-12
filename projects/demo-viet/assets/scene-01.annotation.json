@@ -1,0 +1,43 @@
+{
+  "sceneId": "demo-viet-scene-01",
+  "canvas": {
+    "width": 1376,
+    "height": 768
+  },
+  "storyBasis": "Thử nghiệm hiệu ứng nét vẽ hoạt họa",
+  "sceneDurationMs": 3800,
+  "elements": [
+    {
+      "id": "scene-01-full",
+      "label": "Thử nghiệm hiệu ứng nét vẽ hoạt họa",
+      "sequence": 1,
+      "narrativeRole": "Vẽ toàn cảnh theo thứ tự nét rồi bổ màu",
+      "subtitle": "Thử nghiệm hiệu ứng nét vẽ hoạt họa",
+      "type": "story_island",
+      "region": {
+        "x": 0,
+        "y": 0,
+        "width": 1376,
+        "height": 768
+      },
+      "reveal": {
+        "direction": "top_to_bottom",
+        "startMs": 0,
+        "durationMs": 3000,
+        "maskPaddingPx": 20,
+        "protectedRegions": []
+      },
+      "handPath": {
+        "start": [
+          412,
+          230
+        ],
+        "end": [
+          1032,
+          576
+        ],
+        "easing": "easeInOut"
+      }
+    }
+  ]
+}

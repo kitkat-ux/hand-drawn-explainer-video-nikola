@@ -1,0 +1,43 @@
+{
+  "sceneId": "demo-viet-scene-02",
+  "canvas": {
+    "width": 1376,
+    "height": 768
+  },
+  "storyBasis": "Font chữ tiếng Việt hiển thị chuẩn xác",
+  "sceneDurationMs": 4200,
+  "elements": [
+    {
+      "id": "scene-02-full",
+      "label": "Font chữ tiếng Việt hiển thị chuẩn xác",
+      "sequence": 1,
+      "narrativeRole": "Vẽ toàn cảnh theo thứ tự nét rồi bổ màu",
+      "subtitle": "Font chữ tiếng Việt hiển thị chuẩn xác",
+      "type": "story_island",
+      "region": {
+        "x": 0,
+        "y": 0,
+        "width": 1376,
+        "height": 768
+      },
+      "reveal": {
+        "direction": "top_to_bottom",
+        "startMs": 0,
+        "durationMs": 3400,
+        "maskPaddingPx": 20,
+        "protectedRegions": []
+      },
+      "handPath": {
+        "start": [
+          412,
+          230
+        ],
+        "end": [
+          1032,
+          576
+        ],
+        "easing": "easeInOut"
+      }
+    }
+  ]
+}
