@@ -39,18 +39,79 @@ MEDIA_CHECK = ROOT / "scripts" / "media_check.py"
 
 WIDTH, HEIGHT, FPS = 1920, 1080, 30
 FONT = "Be Vietnam Pro"
-TARGET_SCENE_S = 6.0      # nhịp đích mỗi cảnh stroke-story (repo: 4-8s)
+TARGET_SCENE_S = 8.0      # nhịp đích mỗi cảnh stroke-story (repo: 4-8s)
 MIN_TAIL_SCENE_S = 2.0    # cảnh cụt cuối phim được gộp vào cảnh trước
 GAZE_MS = 800             # thời gian ngắm bản vẽ hoàn chỉnh cuối mỗi cảnh
 OVERLAY_SPECKLE_PCT = 1.0  # % pixel sai khác mạnh (>50/255) ở frame cuối: ngưỡng bật source-overlay
                            # (đo bằng tỷ lệ pixel lệch cao, KHÔNG dùng sai khác trung bình vì lệch nền
                            #  đồng nhất giữa nền giấy render và nền nguồn sẽ làm nhiễu chỉ số)
 
-PROMPT_TEMPLATE = """16:9 minimalist hand-drawn storybook illustration on warm white paper (#F8F6EF).
+PROMPT_TEMPLATE = """16:9 flat hand-drawn editorial storybook illustration.
+Technical constraints: aspect ratio exactly 16:9 (width = height x 16 / 9); render at the highest resolution the image tool supports and never below 1920x1080; if the tool cannot output a true 16:9 frame, stop and report to the user instead of generating a square or stretched image that ffmpeg would have to distort.
 Single coherent scene, visual metaphor only (NO text inside the image): {narrative}
-Sparse clean dark ink outlines, limited flat colors (cobalt blue, sunflower yellow, at most one tomato-red accent),
-very low texture, generous negative space, keep the bottom 18% of the frame empty for subtitles.
-No text, no letters, no numbers, no logos, no hatching, no photorealism, no dense small parts."""
+
+FIXED STYLE — the four sections below are copied verbatim from references/style-lock.md:
+MEASUREMENT CONVENTION: all pixel figures are measured on a 1360x765 canvas (16:9); body height = top of bob hair to heels; one head unit = top of bob hair to chin; face height is not a head unit.
+
+LINE:
+- Every contour is a single solid ink stroke in hex #24251F; no colored outlines.
+- Stroke width is constant at 6 px on a 1360 px wide canvas (0.44% of frame width); allowed range 6-8 px; 11-14 px only at corner joins and T-intersections.
+- Stroke ends are blunt round caps; no taper, no calligraphic thick-thin variation.
+- Hand tremor is minimal: a straight run may deviate at most +/-1 px per 100 px of length; no wavy oscillation, no nervous jitter.
+- No double contours, no overdrawn sketch lines, no hatching, no cross-hatching, no pencil noise, no dashed or broken lines anywhere.
+- Walls and planes are drawn as one single ink line, never as double lines, filled bands or shaded edges.
+
+FILL:
+- Every shape is one completely flat color: zero gradients, zero shading, zero highlights, zero cast shadows, zero texture, zero opacity variation.
+- Exact palette: paper #F8F6EF (background and interior of open shapes), ink #24251F (outlines, hair, dot eyes, optional trousers), cobalt #2855C7, sunflower #F0C541, tomato #D64B36, plus one flat natural skin tone #EDB894 used only on character skin.
+- Per-scene budget: paper and ink always; at most two large fills chosen from cobalt and sunflower; tomato reserved for annotation arrows or circles only, total tomato area at most 0.5% of the frame.
+- Fill edges sit exactly on the centerline of the ink outline: no white gap, no halo, no bleed outside the outline.
+- Background is 100% paper color: no scenery, no floor line, no horizon, no room, no sky, no wash; measured paper coverage of the locked reference is 87.3% of frame area.
+
+CHARACTER:
+- One chibi girl; proportions follow the MEASUREMENT CONVENTION above.
+- Proportion: 2.2 heads tall including bob hair (locked reference measures 434 px body height and 202 px head unit on a 765 px tall canvas). The face-height count (140 px face, about 3.1 face-heights per body) is recorded only to forbid its use as the head unit.
+- Hair: flat ink #24251F bob with side-swept fringe covering the forehead, bob ends curling inward at chin level; the hair is one solid flat shape with no strand lines.
+- Eyes: exactly two vertical-oval solid ink dots, each about 10 x 15 px on a 1360 px wide canvas, spaced about 53 px apart at mid-face height; no eyebrows, no lashes, no eye white, no pupil highlight.
+- Mouth: one horizontal ink line about 13 x 5 px; never an open mouth, never teeth.
+- Ears: one simple C-curve about 16 x 21 px on the visible side only.
+- Hands: mitten shapes with no finger separation, except a single extended index finger in pointing poses; feet: plain rounded skin-tone shapes with no shoe detail.
+- Expression ceiling: neutral to mildly determined; no anger veins, no sweat drops, no blush, no tears, no gritted teeth.
+- Costume lock: sunflower #F0C541 short-sleeve T-shirt with a single neckline line, cobalt #2855C7 long trousers; no patterns, no logos, no buttons, no pockets, no collar.
+
+COMPOSITION:
+- Canvas aspect exactly 16:9; scene images at least 1920x1080, rendered at the highest resolution the image tool supports.
+- If the image tool cannot emit a true 16:9 frame, stop and report to the user; never generate a square image and never stretch one with ffmpeg.
+- Negative space: paper coverage at least 85% of frame area in every scene (locked reference measures 87.3%); 35% is the absolute rejection floor, not a target.
+- Subtitle safe zone: the bottom 18% of frame height (y >= 82% of height) contains zero non-paper pixels: no stroke, no fill, no arrow tip and no foot may cross into it (locked reference measures 0.000%).
+- Subject band: all characters and props sit inside y from 10% to 80% of frame height, with at least 15% paper margin on the left and right edges.
+- Maximum 3 props per scene; a wall line with its hole counts as one prop; an annotation arrow counts as one prop.
+- Exactly one tomato #D64B36 annotation accent (arrow or circle) per scene, stroke 6-8 px, never labeled.
+- One action per scene; no collage, no panel splits, no frames, no borders, no background scenery.
+
+CHARACTER LOCK (verbatim, never shorten or drop, include in every scene prompt):
+The character is a chibi girl with a black ink #24251F bob haircut with side-swept fringe, wearing a flat sunflower #F0C541 short-sleeve shirt and flat cobalt #2855C7 trousers, with flat natural skin tone #EDB894, two small vertical-oval ink dot eyes and one tiny horizontal line mouth, about 2.2 heads tall including bob hair, drawn with constant-width blunt ink outlines and completely flat fills.
+
+COMPOSITION LAW:
+- The layout cycle repeats every 3 scenes, chosen by scene index modulo 3 (scene-01 = A, scene-02 = B, scene-03 = C, scene-04 = A, and so on).
+- Layout A: full-body character offset into the left or right third of the frame; all props on the opposite side; character width at most 45% of frame width.
+- Layout B: close-up of one object or tool only; no character appears in the frame; the object fills at most 50% of frame width; the single tomato annotation accent may point at it.
+- Layout C: half-body character cropped at the waist (no legs visible) with one oversized prop on the side opposite the character's facing direction.
+- Every layout keeps the CHARACTER LOCK sentence, the palette, the stroke width and the subtitle safe zone unchanged; Layout B still carries the CHARACTER LOCK sentence in its prompt so any body part that appears stays identical.
+
+FORBIDDEN: text, letters, numbers, logos, watermark, photorealism, 3D render, glossy shading, gradients, cast shadows, pastel children's-book look, sticker sheet, icon grid, collage, dense small parts, pencil noise.
+
+identical across every image in this series, do not reinterpret"""
+
+
+def clip_words(text: str, limit: int = 240) -> str:
+    """Cắt narrative ở ranh giới từ, tối đa `limit` ký tự (không cắt giữa từ)."""
+    flat = re.sub(r"\s+", " ", text).strip()
+    if len(flat) <= limit:
+        return flat
+    cut = flat[:limit]
+    end = cut.rfind(" ")
+    return (cut[:end] if end > 0 else cut).rstrip()
 
 
 def run(cmd: list[str], desc: str) -> None:
@@ -180,7 +241,7 @@ def main() -> int:
         "WrapStyle: 0", "ScaledBorderAndShadow: yes", "",
         "[V4+ Styles]",
         "Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding",
-        "Style: Subtitle,Be Vietnam Pro,48,&H001F2524,&H000000FF,&H00EFF6F8,&H66000000,-1,0,0,0,100,100,0,0,1,3,1,2,120,120,58,1",
+        "Style: Subtitle,Be Vietnam Pro,56,&H001F2524,&H000000FF,&H00EFF6F8,&H66000000,-1,0,0,0,100,100,0,0,1,3,1,2,120,120,58,1",
         "", "[Events]",
         "Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text",
     ]
@@ -197,7 +258,7 @@ def main() -> int:
         image = assets / f"scene-{idx}.png"
         prompt_file = assets / f"scene-{idx}.prompt.txt"
         if not prompt_file.is_file():
-            narrative = scene["caption"][:160]
+            narrative = clip_words(scene["caption"], 240)
             prompt_file.write_text(PROMPT_TEMPLATE.format(narrative=narrative), encoding="utf-8")
         if not image.is_file():
             if hook:

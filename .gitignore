@@ -38,5 +38,4 @@ projects/*/cache/
 .ffmpeg-cache/
 ffmpeg-cache/
 projects/*/contact.jpg
-projects/*/verification.json
 projects/*/stroke-finalize.json
