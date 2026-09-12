@@ -1,0 +1,107 @@
+{
+  "sceneId": "test-01-scene-19",
+  "canvas": {
+    "width": 1920,
+    "height": 1080
+  },
+  "storyBasis": "heat conducts directly out of her torso and into the cooler earth beneath, functioning like a primitive, electricity-free cooling pad. Next comes micro-airflow engineering.",
+  "sceneDurationMs": 12890,
+  "elements": [
+    {
+      "id": "scene-19-left",
+      "label": "heat conducts directly out of her torso and into the cooler earth beneath, funct",
+      "sequence": 1,
+      "narrativeRole": "Bước 1/3: vẽ cột left từ trên xuống",
+      "subtitle": "heat conducts directly out of her torso and into the cooler earth beneath, functioning like a primitive, electricity-fre",
+      "type": "story_island",
+      "region": {
+        "x": 0,
+        "y": 0,
+        "width": 595,
+        "height": 1080
+      },
+      "reveal": {
+        "direction": "top_to_bottom",
+        "startMs": 0,
+        "durationMs": 4030,
+        "maskPaddingPx": 0,
+        "protectedRegions": []
+      },
+      "handPath": {
+        "start": [
+          178,
+          324
+        ],
+        "end": [
+          446,
+          810
+        ],
+        "easing": "easeInOut"
+      }
+    },
+    {
+      "id": "scene-19-center",
+      "label": "heat conducts directly out of her torso and into the cooler earth beneath, funct",
+      "sequence": 2,
+      "narrativeRole": "Bước 2/3: vẽ cột center từ trên xuống",
+      "subtitle": "heat conducts directly out of her torso and into the cooler earth beneath, functioning like a primitive, electricity-fre",
+      "type": "story_island",
+      "region": {
+        "x": 662,
+        "y": 0,
+        "width": 595,
+        "height": 1080
+      },
+      "reveal": {
+        "direction": "top_to_bottom",
+        "startMs": 4030,
+        "durationMs": 4030,
+        "maskPaddingPx": 0,
+        "protectedRegions": []
+      },
+      "handPath": {
+        "start": [
+          840,
+          324
+        ],
+        "end": [
+          1108,
+          810
+        ],
+        "easing": "easeInOut"
+      }
+    },
+    {
+      "id": "scene-19-right",
+      "label": "heat conducts directly out of her torso and into the cooler earth beneath, funct",
+      "sequence": 3,
+      "narrativeRole": "Bước 3/3: vẽ cột right từ trên xuống",
+      "subtitle": "heat conducts directly out of her torso and into the cooler earth beneath, functioning like a primitive, electricity-fre",
+      "type": "story_island",
+      "region": {
+        "x": 1325,
+        "y": 0,
+        "width": 595,
+        "height": 1080
+      },
+      "reveal": {
+        "direction": "top_to_bottom",
+        "startMs": 8060,
+        "durationMs": 4030,
+        "maskPaddingPx": 0,
+        "protectedRegions": []
+      },
+      "handPath": {
+        "start": [
+          1503,
+          324
+        ],
+        "end": [
+          1771,
+          810
+        ],
+        "easing": "easeInOut"
+      }
+    }
+  ]
+}

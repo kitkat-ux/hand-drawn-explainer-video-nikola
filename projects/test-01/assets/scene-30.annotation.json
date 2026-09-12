@@ -1,0 +1,107 @@
+{
+  "sceneId": "test-01-scene-30",
+  "canvas": {
+    "width": 1920,
+    "height": 1080
+  },
+  "storyBasis": "At night, instead of fighting insomnia during the sweltering evening hours, they adapted to what anthropologists call the 'watch hour.' When heat peaked from nine to midnight,",
+  "sceneDurationMs": 11240,
+  "elements": [
+    {
+      "id": "scene-30-left",
+      "label": "At night, instead of fighting insomnia during the sweltering evening hours, they",
+      "sequence": 1,
+      "narrativeRole": "Bước 1/3: vẽ cột left từ trên xuống",
+      "subtitle": "At night, instead of fighting insomnia during the sweltering evening hours, they adapted to what anthropologists call th",
+      "type": "story_island",
+      "region": {
+        "x": 0,
+        "y": 0,
+        "width": 595,
+        "height": 1080
+      },
+      "reveal": {
+        "direction": "top_to_bottom",
+        "startMs": 0,
+        "durationMs": 3480,
+        "maskPaddingPx": 0,
+        "protectedRegions": []
+      },
+      "handPath": {
+        "start": [
+          178,
+          324
+        ],
+        "end": [
+          446,
+          810
+        ],
+        "easing": "easeInOut"
+      }
+    },
+    {
+      "id": "scene-30-center",
+      "label": "At night, instead of fighting insomnia during the sweltering evening hours, they",
+      "sequence": 2,
+      "narrativeRole": "Bước 2/3: vẽ cột center từ trên xuống",
+      "subtitle": "At night, instead of fighting insomnia during the sweltering evening hours, they adapted to what anthropologists call th",
+      "type": "story_island",
+      "region": {
+        "x": 662,
+        "y": 0,
+        "width": 595,
+        "height": 1080
+      },
+      "reveal": {
+        "direction": "top_to_bottom",
+        "startMs": 3480,
+        "durationMs": 3480,
+        "maskPaddingPx": 0,
+        "protectedRegions": []
+      },
+      "handPath": {
+        "start": [
+          840,
+          324
+        ],
+        "end": [
+          1108,
+          810
+        ],
+        "easing": "easeInOut"
+      }
+    },
+    {
+      "id": "scene-30-right",
+      "label": "At night, instead of fighting insomnia during the sweltering evening hours, they",
+      "sequence": 3,
+      "narrativeRole": "Bước 3/3: vẽ cột right từ trên xuống",
+      "subtitle": "At night, instead of fighting insomnia during the sweltering evening hours, they adapted to what anthropologists call th",
+      "type": "story_island",
+      "region": {
+        "x": 1325,
+        "y": 0,
+        "width": 595,
+        "height": 1080
+      },
+      "reveal": {
+        "direction": "top_to_bottom",
+        "startMs": 6960,
+        "durationMs": 3480,
+        "maskPaddingPx": 0,
+        "protectedRegions": []
+      },
+      "handPath": {
+        "start": [
+          1503,
+          324
+        ],
+        "end": [
+          1771,
+          810
+        ],
+        "easing": "easeInOut"
+      }
+    }
+  ]
+}

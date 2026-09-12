@@ -1,0 +1,185 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1920
+PlayResY: 1080
+WrapStyle: 0
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Subtitle,Be Vietnam Pro,56,&H001F2524,&H000000FF,&H00EFF6F8,&H66000000,-1,0,0,0,100,100,0,0,1,3,1,2,120,120,58,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.08,0:00:03.92,Subtitle,,0,0,0,,We all know the unbearable frustration of a hot summer night.
+Dialogue: 0,0:00:04.00,0:00:06.82,Subtitle,,0,0,0,,You toss and turn on sweat-soaked sheets,
+Dialogue: 0,0:00:06.90,0:00:10.68,Subtitle,,0,0,0,,flip your pillow over for the tenth time searching for a cool spot,
+Dialogue: 0,0:00:10.76,0:00:15.42,Subtitle,,0,0,0,,and finally reach over to dial your air conditioner down another two degrees.
+Dialogue: 0,0:00:15.50,0:00:19.54,Subtitle,,0,0,0,,You close your eyes, take a deep breath of refrigerated air,
+Dialogue: 0,0:00:19.56,0:00:22.68,Subtitle,,0,0,0,,and drift effortlessly into deep sleep.
+Dialogue: 0,0:00:22.74,0:00:25.26,Subtitle,,0,0,0,,For ninety-nine percent of human history,
+Dialogue: 0,0:00:25.34,0:00:29.70,Subtitle,,0,0,0,,that two-second dial adjustment was completely impossible.
+Dialogue: 0,0:00:29.78,0:00:31.30,Subtitle,,0,0,0,,Seventy thousand years ago,
+Dialogue: 0,0:00:31.34,0:00:37.16,Subtitle,,0,0,0,,during the scorching dry seasons of equatorial Africa, midnight brought no relief.
+Dialogue: 0,0:00:37.22,0:00:39.38,Subtitle,,0,0,0,,The sun had set hours ago,
+Dialogue: 0,0:00:39.46,0:00:44.92,Subtitle,,0,0,0,,yet the ambient air remained trapped at a suffocating thirty-six degrees Celsius.
+Dialogue: 0,0:00:45.00,0:00:47.98,Subtitle,,0,0,0,,There was no breeze. There was no ice.
+Dialogue: 0,0:00:48.06,0:00:52.00,Subtitle,,0,0,0,,Your skin was slick with sweat, your mouth was bone dry,
+Dialogue: 0,0:00:52.08,0:00:54.30,Subtitle,,0,0,0,,and your body was desperate for rest
+Dialogue: 0,0:00:54.38,0:00:58.54,Subtitle,,0,0,0,,after a thirty-kilometer trek across the sun-baked plains.
+Dialogue: 0,0:00:58.62,0:01:02.72,Subtitle,,0,0,0,,This wasn't just uncomfortable—it was a biological crisis.
+Dialogue: 0,0:01:02.80,0:01:04.90,Subtitle,,0,0,0,,To initiate slow-wave sleep,
+Dialogue: 0,0:01:04.98,0:01:08.08,Subtitle,,0,0,0,,the human brain requires your core body temperature
+Dialogue: 0,0:01:08.14,0:01:11.42,Subtitle,,0,0,0,,to drop by roughly one full degree Celsius.
+Dialogue: 0,0:01:11.50,0:01:14.52,Subtitle,,0,0,0,,It does this by opening blood vessels in your hands,
+Dialogue: 0,0:01:14.60,0:01:19.54,Subtitle,,0,0,0,,feet, and face to radiate metabolic heat into the surrounding air.
+Dialogue: 0,0:01:19.58,0:01:24.58,Subtitle,,0,0,0,,But when the night air is hotter than your skin, that heat has nowhere to go.
+Dialogue: 0,0:01:24.66,0:01:26.78,Subtitle,,0,0,0,,Trapped in a thermal feedback loop,
+Dialogue: 0,0:01:26.82,0:01:30.50,Subtitle,,0,0,0,,your brain interprets the heat as a biological emergency,
+Dialogue: 0,0:01:30.58,0:01:33.20,Subtitle,,0,0,0,,flooding your system with cortisol and keeping
+Dialogue: 0,0:01:33.26,0:01:36.60,Subtitle,,0,0,0,,you in a state of exhausting hyper-arousal.
+Dialogue: 0,0:01:36.68,0:01:38.84,Subtitle,,0,0,0,,Your first instinct might be simple:
+Dialogue: 0,0:01:38.92,0:01:44.34,Subtitle,,0,0,0,,why not just climb to the top of an open ridge and sleep naked in the night breeze?
+Dialogue: 0,0:01:44.42,0:01:49.56,Subtitle,,0,0,0,,Because in the Paleolithic world, sleeping in the open was a death sentence.
+Dialogue: 0,0:01:49.62,0:01:51.34,Subtitle,,0,0,0,,The moment darkness fell,
+Dialogue: 0,0:01:51.40,0:01:54.92,Subtitle,,0,0,0,,the African savanna belonged to apex predators with
+Dialogue: 0,0:01:54.98,0:01:59.50,Subtitle,,0,0,0,,night vision five times sharper than yours—saber-toothed cats,
+Dialogue: 0,0:01:59.58,0:02:04.64,Subtitle,,0,0,0,,giant hyenas, and leopards that actively hunted along breezy ridges.
+Dialogue: 0,0:02:04.72,0:02:06.16,Subtitle,,0,0,0,,To survive the night,
+Dialogue: 0,0:02:06.24,0:02:11.52,Subtitle,,0,0,0,,humans had to retreat into enclosed rock shelters—the very places where hot,
+Dialogue: 0,0:02:11.60,0:02:15.52,Subtitle,,0,0,0,,stagnant air became trapped like an oven.
+Dialogue: 0,0:02:15.60,0:02:18.58,Subtitle,,0,0,0,,During the climate extremes of the Late Pleistocene,
+Dialogue: 0,0:02:18.66,0:02:21.58,Subtitle,,0,0,0,,equatorial heatwaves were relentless.
+Dialogue: 0,0:02:21.66,0:02:25.06,Subtitle,,0,0,0,,Paleoclimate data shows that hunter-gatherer bands
+Dialogue: 0,0:02:25.14,0:02:28.18,Subtitle,,0,0,0,,regularly endured dry seasons where daytime
+Dialogue: 0,0:02:28.26,0:02:31.10,Subtitle,,0,0,0,,temperatures soared past forty-five degrees and
+Dialogue: 0,0:02:31.18,0:02:34.60,Subtitle,,0,0,0,,nighttime lows never dropped below thirty-four.
+Dialogue: 0,0:02:34.68,0:02:39.10,Subtitle,,0,0,0,,For weeks at a time, natural cooling was virtually nonexistent across
+Dialogue: 0,0:02:39.14,0:02:42.00,Subtitle,,0,0,0,,vast stretches of the African continent.
+Dialogue: 0,0:02:42.08,0:02:45.26,Subtitle,,0,0,0,,And our ancestors could not afford sleep debt.
+Dialogue: 0,0:02:45.34,0:02:47.66,Subtitle,,0,0,0,,In a world with zero safety nets,
+Dialogue: 0,0:02:47.74,0:02:51.69,Subtitle,,0,0,0,,severe sleep deprivation reduces reaction time and
+Dialogue: 0,0:02:51.76,0:02:55.58,Subtitle,,0,0,0,,cognitive processing by more than thirty percent.
+Dialogue: 0,0:02:55.62,0:02:59.48,Subtitle,,0,0,0,,An exhausted hunter misjudged the trajectory of a spear,
+Dialogue: 0,0:02:59.56,0:03:02.22,Subtitle,,0,0,0,,missed the warning growl of a hidden predator,
+Dialogue: 0,0:03:02.30,0:03:07.26,Subtitle,,0,0,0,,or collapsed from heat-induced dehydration during midday tracking.
+Dialogue: 0,0:03:07.34,0:03:11.44,Subtitle,,0,0,0,,Chronic insomnia was not a nuisance—it was fatal.
+Dialogue: 0,0:03:11.52,0:03:13.81,Subtitle,,0,0,0,,So how did ancient humans survive hundreds
+Dialogue: 0,0:03:13.88,0:03:18.45,Subtitle,,0,0,0,,of thousands of equatorial summers without modern technology?
+Dialogue: 0,0:03:18.53,0:03:21.92,Subtitle,,0,0,0,,The answer is that they didn't just endure the heat—they
+Dialogue: 0,0:03:21.98,0:03:26.84,Subtitle,,0,0,0,,turned the geology of the landscape into an active thermal engine.
+Dialogue: 0,0:03:26.92,0:03:30.18,Subtitle,,0,0,0,,Meet Tanya, a hunter-gatherer who has spent the last
+Dialogue: 0,0:03:30.24,0:03:33.96,Subtitle,,0,0,0,,eight hours navigating an intense forty-degree heatwave.
+Dialogue: 0,0:03:34.04,0:03:35.40,Subtitle,,0,0,0,,As twilight descends,
+Dialogue: 0,0:03:35.48,0:03:40.30,Subtitle,,0,0,0,,she begins executing a precise, multi-layered survival protocol.
+Dialogue: 0,0:03:40.38,0:03:41.88,Subtitle,,0,0,0,,Tanya knows that different ground
+Dialogue: 0,0:03:41.92,0:03:45.34,Subtitle,,0,0,0,,materials possess radically different thermal mass.
+Dialogue: 0,0:03:45.42,0:03:49.60,Subtitle,,0,0,0,,Open sand and fine silt absorb solar radiation all day
+Dialogue: 0,0:03:49.68,0:03:55.18,Subtitle,,0,0,0,,and continue radiating intense heat into the air long after midnight.
+Dialogue: 0,0:03:55.20,0:03:57.42,Subtitle,,0,0,0,,But deep limestone caves and thick
+Dialogue: 0,0:03:57.48,0:04:02.20,Subtitle,,0,0,0,,sandstone rock shelters possess enormous thermal inertia.
+Dialogue: 0,0:04:02.28,0:04:04.06,Subtitle,,0,0,0,,Deep inside a karst cave,
+Dialogue: 0,0:04:04.10,0:04:08.71,Subtitle,,0,0,0,,the interior rock stays stabilized at the annual average temperature—often
+Dialogue: 0,0:04:08.78,0:04:13.18,Subtitle,,0,0,0,,eight to fifteen degrees cooler than the open savanna outside.
+Dialogue: 0,0:04:13.24,0:04:14.70,Subtitle,,0,0,0,,To a modern camper,
+Dialogue: 0,0:04:14.78,0:04:19.71,Subtitle,,0,0,0,,sleeping on hard solid rock sounds punishing compared to soft sand.
+Dialogue: 0,0:04:19.79,0:04:24.26,Subtitle,,0,0,0,,But to Tanya, that limestone bedrock is a massive heatsink.
+Dialogue: 0,0:04:24.34,0:04:29.06,Subtitle,,0,0,0,,Solid stone has a thermal conductivity vastly higher than loose dirt.
+Dialogue: 0,0:04:29.14,0:04:31.48,Subtitle,,0,0,0,,When she lies down on bare limestone,
+Dialogue: 0,0:04:31.56,0:04:36.32,Subtitle,,0,0,0,,heat conducts directly out of her torso and into the cooler earth beneath,
+Dialogue: 0,0:04:36.40,0:04:41.01,Subtitle,,0,0,0,,functioning like a primitive, electricity-free cooling pad.
+Dialogue: 0,0:04:41.09,0:04:44.37,Subtitle,,0,0,0,,Next comes micro-airflow engineering.
+Dialogue: 0,0:04:44.45,0:04:48.65,Subtitle,,0,0,0,,Tanya doesn't sleep at the very back of the cave where stagnant air pools,
+Dialogue: 0,0:04:48.73,0:04:52.23,Subtitle,,0,0,0,,nor at the exposed outer lip where predators roam.
+Dialogue: 0,0:04:52.31,0:04:56.95,Subtitle,,0,0,0,,She positions her bedding at the narrow constriction point of the rock shelter.
+Dialogue: 0,0:04:57.03,0:04:59.89,Subtitle,,0,0,0,,As evening air cools on the upper plateau,
+Dialogue: 0,0:04:59.97,0:05:03.73,Subtitle,,0,0,0,,it sinks into the canyon and draws through the cave entrance.
+Dialogue: 0,0:05:03.79,0:05:07.17,Subtitle,,0,0,0,,The narrowing rock creates a natural Venturi effect,
+Dialogue: 0,0:05:07.25,0:05:09.99,Subtitle,,0,0,0,,accelerating subtle breezes across the sleeping
+Dialogue: 0,0:05:10.07,0:05:14.61,Subtitle,,0,0,0,,area to maximize convective sweat evaporation.
+Dialogue: 0,0:05:14.69,0:05:20.11,Subtitle,,0,0,0,,For decades, historians assumed ancient humans slept directly on bare dirt.
+Dialogue: 0,0:05:20.19,0:05:23.51,Subtitle,,0,0,0,,But in twenty eleven archaeologists excavating Sibudu
+Dialogue: 0,0:05:23.59,0:05:27.45,Subtitle,,0,0,0,,Cave in South Africa made a breathtaking discovery:
+Dialogue: 0,0:05:27.53,0:05:32.89,Subtitle,,0,0,0,,fossilized human bedding dating back seventy-seven thousand years.
+Dialogue: 0,0:05:32.97,0:05:36.92,Subtitle,,0,0,0,,Prehistoric hunter-gatherers were not sleeping on raw ground.
+Dialogue: 0,0:05:37.00,0:05:39.15,Subtitle,,0,0,0,,They were manufacturing complex,
+Dialogue: 0,0:05:39.23,0:05:42.57,Subtitle,,0,0,0,,engineered sleeping pads designed specifically to
+Dialogue: 0,0:05:42.63,0:05:45.35,Subtitle,,0,0,0,,solve the deadly problems of nighttime heat,
+Dialogue: 0,0:05:45.43,0:05:48.31,Subtitle,,0,0,0,,moisture, and parasites.
+Dialogue: 0,0:05:48.37,0:05:52.57,Subtitle,,0,0,0,,The Sibudu discovery revealed a brilliant two-part technology.
+Dialogue: 0,0:05:52.65,0:05:56.09,Subtitle,,0,0,0,,First, ancient humans gathered fresh river sedges and
+Dialogue: 0,0:05:56.13,0:06:01.09,Subtitle,,0,0,0,,the aromatic leaves of Cryptocarya woodii—a wild laurel tree.
+Dialogue: 0,0:06:01.17,0:06:02.11,Subtitle,,0,0,0,,When crushed,
+Dialogue: 0,0:06:02.19,0:06:08.15,Subtitle,,0,0,0,,these leaves release volatile organic compounds like camphor and cryptocaryone,
+Dialogue: 0,0:06:08.23,0:06:13.47,Subtitle,,0,0,0,,which act as natural insect repellents against mosquitoes and biting gnats.
+Dialogue: 0,0:06:13.55,0:06:18.93,Subtitle,,0,0,0,,Second, they laid these aromatic plant mats over a base of powdered wood ash.
+Dialogue: 0,0:06:19.01,0:06:23.51,Subtitle,,0,0,0,,The ash served as an insulating barrier against ground heat while acting
+Dialogue: 0,0:06:23.53,0:06:29.09,Subtitle,,0,0,0,,as a natural desiccant that dried out and killed crawling mites and ticks.
+Dialogue: 0,0:06:29.17,0:06:33.97,Subtitle,,0,0,0,,Perhaps the biggest myth about ancient humans is that they slept in a single,
+Dialogue: 0,0:06:33.99,0:06:36.79,Subtitle,,0,0,0,,uninterrupted eight-hour block.
+Dialogue: 0,0:06:36.87,0:06:41.35,Subtitle,,0,0,0,,Anthropological studies of modern tropical hunter-gatherers—like the
+Dialogue: 0,0:06:41.39,0:06:43.85,Subtitle,,0,0,0,,Hadza of Tanzania and the San of
+Dialogue: 0,0:06:43.93,0:06:48.59,Subtitle,,0,0,0,,the Kalahari—reveal that continuous monophasic sleep is
+Dialogue: 0,0:06:48.67,0:06:52.55,Subtitle,,0,0,0,,largely an invention of modern industrial schedules.
+Dialogue: 0,0:06:52.63,0:06:54.28,Subtitle,,0,0,0,,During extreme heat seasons,
+Dialogue: 0,0:06:54.36,0:06:58.71,Subtitle,,0,0,0,,our ancestors practiced biphasic and segmented sleep.
+Dialogue: 0,0:06:58.72,0:07:04.15,Subtitle,,0,0,0,,They took a ninety-minute midday siesta in breezy tree shade during peak heat,
+Dialogue: 0,0:07:04.23,0:07:07.59,Subtitle,,0,0,0,,reducing their total sleep requirement for the night.
+Dialogue: 0,0:07:07.67,0:07:11.79,Subtitle,,0,0,0,,At night, instead of fighting insomnia during the sweltering evening hours,
+Dialogue: 0,0:07:11.87,0:07:16.39,Subtitle,,0,0,0,,they adapted to what anthropologists call the 'watch hour.'
+Dialogue: 0,0:07:16.47,0:07:18.83,Subtitle,,0,0,0,,When heat peaked from nine to midnight,
+Dialogue: 0,0:07:18.91,0:07:24.85,Subtitle,,0,0,0,,the camp remained relaxed—telling stories, grooming, and preparing tools.
+Dialogue: 0,0:07:24.91,0:07:28.19,Subtitle,,0,0,0,,True deep sleep occurred in the second half of the night,
+Dialogue: 0,0:07:28.27,0:07:30.59,Subtitle,,0,0,0,,between three and six in the morning,
+Dialogue: 0,0:07:30.67,0:07:35.78,Subtitle,,0,0,0,,when radiant cooling finally dropped ambient temperatures to their daily low.
+Dialogue: 0,0:07:35.86,0:07:39.90,Subtitle,,0,0,0,,Ancient humans also hacked their own vascular biology.
+Dialogue: 0,0:07:39.98,0:07:44.32,Subtitle,,0,0,0,,Archaeological evidence from Middle Stone Age sites reveals widespread
+Dialogue: 0,0:07:44.40,0:07:48.66,Subtitle,,0,0,0,,processing of red mineral ochre and fine river clays.
+Dialogue: 0,0:07:48.74,0:07:50.86,Subtitle,,0,0,0,,While ochre has cultural meaning,
+Dialogue: 0,0:07:50.92,0:07:55.16,Subtitle,,0,0,0,,experimental archaeology shows that applying damp mineral paste to
+Dialogue: 0,0:07:55.24,0:07:59.94,Subtitle,,0,0,0,,high-blood-flow trigger points—like the carotid artery along the neck and
+Dialogue: 0,0:07:59.98,0:08:04.39,Subtitle,,0,0,0,,the inside of the wrists—accelerates conductive heat transfer and
+Dialogue: 0,0:08:04.46,0:08:10.46,Subtitle,,0,0,0,,creates a lasting evaporative cooling effect across major vascular pathways.
+Dialogue: 0,0:08:10.68,0:08:14.64,Subtitle,,0,0,0,,Finally, ancient bands practiced social thermoregulation.
+Dialogue: 0,0:08:14.72,0:08:19.12,Subtitle,,0,0,0,,In freezing winters, humans huddled closely together to share body heat.
+Dialogue: 0,0:08:19.20,0:08:21.14,Subtitle,,0,0,0,,But during extreme heatwaves,
+Dialogue: 0,0:08:21.22,0:08:25.44,Subtitle,,0,0,0,,they did the exact opposite—dispersing their sleeping mats two to three
+Dialogue: 0,0:08:25.48,0:08:30.74,Subtitle,,0,0,0,,meters apart across the cave floor to prevent mutual radiant heat buildup.
+Dialogue: 0,0:08:30.82,0:08:34.58,Subtitle,,0,0,0,,Meanwhile, a rotating sentinel stood guard by the cave mouth,
+Dialogue: 0,0:08:34.66,0:08:37.31,Subtitle,,0,0,0,,ensuring that physical dispersion did not
+Dialogue: 0,0:08:37.36,0:08:41.42,Subtitle,,0,0,0,,compromise group defense against nocturnal predators.
+Dialogue: 0,0:08:41.50,0:08:43.78,Subtitle,,0,0,0,,These behavioral strategies were backed by the
+Dialogue: 0,0:08:43.82,0:08:47.64,Subtitle,,0,0,0,,most sophisticated cooling hardware on planet Earth:
+Dialogue: 0,0:08:47.72,0:08:50.02,Subtitle,,0,0,0,,the human body itself.
+Dialogue: 0,0:08:50.08,0:08:52.32,Subtitle,,0,0,0,,Over two million years of evolution,
+Dialogue: 0,0:08:52.36,0:08:56.80,Subtitle,,0,0,0,,while other mammals retained thick fur coats and panting mechanisms,
+Dialogue: 0,0:08:56.88,0:08:59.98,Subtitle,,0,0,0,,our ancestors shed nearly all body hair and
+Dialogue: 0,0:09:00.00,0:09:03.54,Subtitle,,0,0,0,,developed up to four million eccrine sweat glands.
+Dialogue: 0,0:09:03.62,0:09:09.16,Subtitle,,0,0,0,,We became the naked ape—the undisputed endurance champions of the animal kingdom,
+Dialogue: 0,0:09:09.24,0:09:11.85,Subtitle,,0,0,0,,capable of dumping up to five hundred calories
+Dialogue: 0,0:09:11.88,0:09:15.96,Subtitle,,0,0,0,,of heat per hour through evaporative skin cooling.
+Dialogue: 0,0:09:16.04,0:09:21.42,Subtitle,,0,0,0,,Even more remarkable is what neuro-anatomists call the Cranial Radiator.
+Dialogue: 0,0:09:21.50,0:09:26.00,Subtitle,,0,0,0,,As our hominin ancestors evolved massive, heat-sensitive brains,
+Dialogue: 0,0:09:26.08,0:09:30.76,Subtitle,,0,0,0,,our skulls evolved a complex network of tiny emissary veins.
+Dialogue: 0,0:09:30.84,0:09:33.31,Subtitle,,0,0,0,,When you sweat from your forehead and scalp,
+Dialogue: 0,0:09:33.39,0:09:37.38,Subtitle,,0,0,0,,the cooled venous blood flows backward into the cranial cavity,
+Dialogue: 0,0:09:37.46,0:09:43.14,Subtitle,,0,0,0,,selectively bathing and protecting the delicate cerebral cortex from thermal damage.
+Dialogue: 0,0:09:43.22,0:09:46.28,Subtitle,,0,0,0,,Our very intelligence was made possible by our ability
+Dialogue: 0,0:09:46.34,0:09:51.74,Subtitle,,0,0,0,,to keep our brains cool under extreme survival pressure.
+Dialogue: 0,0:09:51.83,0:09:54.08,Subtitle,,0,0,0,,Today, many of our modern sleep
+Dialogue: 0,0:09:54.14,0:09:58.46,Subtitle,,0,0,0,,struggles stem from forgetting this ancestral biology.
+Dialogue: 0,0:09:58.54,0:10:02.33,Subtitle,,0,0,0,,We trap ourselves in sealed rooms with artificial heating,
+Dialogue: 0,0:10:02.40,0:10:06.76,Subtitle,,0,0,0,,sleep on synthetic foam mattresses that trap heat against our backs,
+Dialogue: 0,0:10:06.84,0:10:12.04,Subtitle,,0,0,0,,and stare into glowing blue screens that trick our brains into thinking it's midday.
+Dialogue: 0,0:10:12.12,0:10:17.26,Subtitle,,0,0,0,,Our bodies still expect the natural temperature drop, the circulating night breeze,
+Dialogue: 0,0:10:17.34,0:10:19.60,Subtitle,,0,0,0,,and the rhythmic cooling of the earth that
+Dialogue: 0,0:10:19.68,0:10:23.90,Subtitle,,0,0,0,,guided human sleep for hundreds of thousands of years.
+Dialogue: 0,0:10:23.98,0:10:28.15,Subtitle,,0,0,0,,Ancient humans didn't survive extreme heat through modern machines.
+Dialogue: 0,0:10:28.23,0:10:33.43,Subtitle,,0,0,0,,They survived through deep ecological intelligence—reading rock formations,
+Dialogue: 0,0:10:33.50,0:10:35.74,Subtitle,,0,0,0,,mastering botanical chemistry,
+Dialogue: 0,0:10:35.83,0:10:39.02,Subtitle,,0,0,0,,and aligning their lives with the rhythm of the planet.
+Dialogue: 0,0:10:39.10,0:10:42.71,Subtitle,,0,0,0,,The next time you enjoy a cool night's sleep, remember:
+Dialogue: 0,0:10:42.78,0:10:46.21,Subtitle,,0,0,0,,you are carrying the genetic legacy of ancestors who
+Dialogue: 0,0:10:46.28,0:10:50.52,Subtitle,,0,0,0,,engineered their own survival in a world with no thermostats.
+Dialogue: 0,0:10:50.60,0:10:54.38,Subtitle,,0,0,0,,If you enjoyed this journey into everyday life before history,
+Dialogue: 0,0:10:54.46,0:10:59.65,Subtitle,,0,0,0,,subscribe to Primal Questions, and explore our next episode on ancient survival.

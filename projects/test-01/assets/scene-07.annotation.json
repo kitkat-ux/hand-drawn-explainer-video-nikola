@@ -1,0 +1,107 @@
+{
+  "sceneId": "test-01-scene-07",
+  "canvas": {
+    "width": 1920,
+    "height": 1080
+  },
+  "storyBasis": "flooding your system with cortisol and keeping you in a state of exhausting hyper-arousal. Your first instinct might be simple: why not just climb to the top of an open ridge and sleep naked in the ni",
+  "sceneDurationMs": 13840,
+  "elements": [
+    {
+      "id": "scene-07-left",
+      "label": "flooding your system with cortisol and keeping you in a state of exhausting hype",
+      "sequence": 1,
+      "narrativeRole": "Bước 1/3: vẽ cột left từ trên xuống",
+      "subtitle": "flooding your system with cortisol and keeping you in a state of exhausting hyper-arousal. Your first instinct might be ",
+      "type": "story_island",
+      "region": {
+        "x": 0,
+        "y": 0,
+        "width": 595,
+        "height": 1080
+      },
+      "reveal": {
+        "direction": "top_to_bottom",
+        "startMs": 0,
+        "durationMs": 4346,
+        "maskPaddingPx": 0,
+        "protectedRegions": []
+      },
+      "handPath": {
+        "start": [
+          178,
+          324
+        ],
+        "end": [
+          446,
+          810
+        ],
+        "easing": "easeInOut"
+      }
+    },
+    {
+      "id": "scene-07-center",
+      "label": "flooding your system with cortisol and keeping you in a state of exhausting hype",
+      "sequence": 2,
+      "narrativeRole": "Bước 2/3: vẽ cột center từ trên xuống",
+      "subtitle": "flooding your system with cortisol and keeping you in a state of exhausting hyper-arousal. Your first instinct might be ",
+      "type": "story_island",
+      "region": {
+        "x": 662,
+        "y": 0,
+        "width": 595,
+        "height": 1080
+      },
+      "reveal": {
+        "direction": "top_to_bottom",
+        "startMs": 4346,
+        "durationMs": 4347,
+        "maskPaddingPx": 0,
+        "protectedRegions": []
+      },
+      "handPath": {
+        "start": [
+          840,
+          324
+        ],
+        "end": [
+          1108,
+          810
+        ],
+        "easing": "easeInOut"
+      }
+    },
+    {
+      "id": "scene-07-right",
+      "label": "flooding your system with cortisol and keeping you in a state of exhausting hype",
+      "sequence": 3,
+      "narrativeRole": "Bước 3/3: vẽ cột right từ trên xuống",
+      "subtitle": "flooding your system with cortisol and keeping you in a state of exhausting hyper-arousal. Your first instinct might be ",
+      "type": "story_island",
+      "region": {
+        "x": 1325,
+        "y": 0,
+        "width": 595,
+        "height": 1080
+      },
+      "reveal": {
+        "direction": "top_to_bottom",
+        "startMs": 8693,
+        "durationMs": 4347,
+        "maskPaddingPx": 0,
+        "protectedRegions": []
+      },
+      "handPath": {
+        "start": [
+          1503,
+          324
+        ],
+        "end": [
+          1771,
+          810
+        ],
+        "easing": "easeInOut"
+      }
+    }
+  ]
+}

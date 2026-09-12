@@ -1,0 +1,107 @@
+{
+  "sceneId": "test-01-scene-40",
+  "canvas": {
+    "width": 1920,
+    "height": 1080
+  },
+  "storyBasis": "When you sweat from your forehead and scalp, the cooled venous blood flows backward into the cranial cavity, selectively bathing and protecting the delicate cerebral cortex from thermal damage. Our ve",
+  "sceneDurationMs": 15520,
+  "elements": [
+    {
+      "id": "scene-40-left",
+      "label": "When you sweat from your forehead and scalp, the cooled venous blood flows backw",
+      "sequence": 1,
+      "narrativeRole": "Bước 1/3: vẽ cột left từ trên xuống",
+      "subtitle": "When you sweat from your forehead and scalp, the cooled venous blood flows backward into the cranial cavity, selectively",
+      "type": "story_island",
+      "region": {
+        "x": 0,
+        "y": 0,
+        "width": 595,
+        "height": 1080
+      },
+      "reveal": {
+        "direction": "top_to_bottom",
+        "startMs": 0,
+        "durationMs": 4906,
+        "maskPaddingPx": 0,
+        "protectedRegions": []
+      },
+      "handPath": {
+        "start": [
+          178,
+          324
+        ],
+        "end": [
+          446,
+          810
+        ],
+        "easing": "easeInOut"
+      }
+    },
+    {
+      "id": "scene-40-center",
+      "label": "When you sweat from your forehead and scalp, the cooled venous blood flows backw",
+      "sequence": 2,
+      "narrativeRole": "Bước 2/3: vẽ cột center từ trên xuống",
+      "subtitle": "When you sweat from your forehead and scalp, the cooled venous blood flows backward into the cranial cavity, selectively",
+      "type": "story_island",
+      "region": {
+        "x": 662,
+        "y": 0,
+        "width": 595,
+        "height": 1080
+      },
+      "reveal": {
+        "direction": "top_to_bottom",
+        "startMs": 4906,
+        "durationMs": 4907,
+        "maskPaddingPx": 0,
+        "protectedRegions": []
+      },
+      "handPath": {
+        "start": [
+          840,
+          324
+        ],
+        "end": [
+          1108,
+          810
+        ],
+        "easing": "easeInOut"
+      }
+    },
+    {
+      "id": "scene-40-right",
+      "label": "When you sweat from your forehead and scalp, the cooled venous blood flows backw",
+      "sequence": 3,
+      "narrativeRole": "Bước 3/3: vẽ cột right từ trên xuống",
+      "subtitle": "When you sweat from your forehead and scalp, the cooled venous blood flows backward into the cranial cavity, selectively",
+      "type": "story_island",
+      "region": {
+        "x": 1325,
+        "y": 0,
+        "width": 595,
+        "height": 1080
+      },
+      "reveal": {
+        "direction": "top_to_bottom",
+        "startMs": 9813,
+        "durationMs": 4907,
+        "maskPaddingPx": 0,
+        "protectedRegions": []
+      },
+      "handPath": {
+        "start": [
+          1503,
+          324
+        ],
+        "end": [
+          1771,
+          810
+        ],
+        "easing": "easeInOut"
+      }
+    }
+  ]
+}

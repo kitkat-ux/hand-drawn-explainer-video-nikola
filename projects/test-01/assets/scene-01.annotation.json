@@ -1,0 +1,107 @@
+{
+  "sceneId": "test-01-scene-01",
+  "canvas": {
+    "width": 1920,
+    "height": 1080
+  },
+  "storyBasis": "We all know the unbearable frustration of a hot summer night. You toss and turn on sweat-soaked sheets, flip your pillow over for the tenth time searching for a cool spot, and finally reach over to di",
+  "sceneDurationMs": 15420,
+  "elements": [
+    {
+      "id": "scene-01-left",
+      "label": "We all know the unbearable frustration of a hot summer night. You toss and turn ",
+      "sequence": 1,
+      "narrativeRole": "Bước 1/3: vẽ cột left từ trên xuống",
+      "subtitle": "We all know the unbearable frustration of a hot summer night. You toss and turn on sweat-soaked sheets, flip your pillow",
+      "type": "story_island",
+      "region": {
+        "x": 0,
+        "y": 0,
+        "width": 595,
+        "height": 1080
+      },
+      "reveal": {
+        "direction": "top_to_bottom",
+        "startMs": 0,
+        "durationMs": 4873,
+        "maskPaddingPx": 0,
+        "protectedRegions": []
+      },
+      "handPath": {
+        "start": [
+          178,
+          324
+        ],
+        "end": [
+          446,
+          810
+        ],
+        "easing": "easeInOut"
+      }
+    },
+    {
+      "id": "scene-01-center",
+      "label": "We all know the unbearable frustration of a hot summer night. You toss and turn ",
+      "sequence": 2,
+      "narrativeRole": "Bước 2/3: vẽ cột center từ trên xuống",
+      "subtitle": "We all know the unbearable frustration of a hot summer night. You toss and turn on sweat-soaked sheets, flip your pillow",
+      "type": "story_island",
+      "region": {
+        "x": 662,
+        "y": 0,
+        "width": 595,
+        "height": 1080
+      },
+      "reveal": {
+        "direction": "top_to_bottom",
+        "startMs": 4873,
+        "durationMs": 4873,
+        "maskPaddingPx": 0,
+        "protectedRegions": []
+      },
+      "handPath": {
+        "start": [
+          840,
+          324
+        ],
+        "end": [
+          1108,
+          810
+        ],
+        "easing": "easeInOut"
+      }
+    },
+    {
+      "id": "scene-01-right",
+      "label": "We all know the unbearable frustration of a hot summer night. You toss and turn ",
+      "sequence": 3,
+      "narrativeRole": "Bước 3/3: vẽ cột right từ trên xuống",
+      "subtitle": "We all know the unbearable frustration of a hot summer night. You toss and turn on sweat-soaked sheets, flip your pillow",
+      "type": "story_island",
+      "region": {
+        "x": 1325,
+        "y": 0,
+        "width": 595,
+        "height": 1080
+      },
+      "reveal": {
+        "direction": "top_to_bottom",
+        "startMs": 9746,
+        "durationMs": 4874,
+        "maskPaddingPx": 0,
+        "protectedRegions": []
+      },
+      "handPath": {
+        "start": [
+          1503,
+          324
+        ],
+        "end": [
+          1771,
+          810
+        ],
+        "easing": "easeInOut"
+      }
+    }
+  ]
+}

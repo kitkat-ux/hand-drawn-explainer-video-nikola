@@ -1,0 +1,107 @@
+{
+  "sceneId": "test-01-scene-17",
+  "canvas": {
+    "width": 1920,
+    "height": 1080
+  },
+  "storyBasis": "the interior rock stays stabilized at the annual average temperature—often eight to fifteen degrees cooler than the open savanna outside. To a modern camper, sleeping on hard solid rock sounds punishi",
+  "sceneDurationMs": 15650,
+  "elements": [
+    {
+      "id": "scene-17-left",
+      "label": "the interior rock stays stabilized at the annual average temperature—often eight",
+      "sequence": 1,
+      "narrativeRole": "Bước 1/3: vẽ cột left từ trên xuống",
+      "subtitle": "the interior rock stays stabilized at the annual average temperature—often eight to fifteen degrees cooler than the open",
+      "type": "story_island",
+      "region": {
+        "x": 0,
+        "y": 0,
+        "width": 595,
+        "height": 1080
+      },
+      "reveal": {
+        "direction": "top_to_bottom",
+        "startMs": 0,
+        "durationMs": 4950,
+        "maskPaddingPx": 0,
+        "protectedRegions": []
+      },
+      "handPath": {
+        "start": [
+          178,
+          324
+        ],
+        "end": [
+          446,
+          810
+        ],
+        "easing": "easeInOut"
+      }
+    },
+    {
+      "id": "scene-17-center",
+      "label": "the interior rock stays stabilized at the annual average temperature—often eight",
+      "sequence": 2,
+      "narrativeRole": "Bước 2/3: vẽ cột center từ trên xuống",
+      "subtitle": "the interior rock stays stabilized at the annual average temperature—often eight to fifteen degrees cooler than the open",
+      "type": "story_island",
+      "region": {
+        "x": 662,
+        "y": 0,
+        "width": 595,
+        "height": 1080
+      },
+      "reveal": {
+        "direction": "top_to_bottom",
+        "startMs": 4950,
+        "durationMs": 4950,
+        "maskPaddingPx": 0,
+        "protectedRegions": []
+      },
+      "handPath": {
+        "start": [
+          840,
+          324
+        ],
+        "end": [
+          1108,
+          810
+        ],
+        "easing": "easeInOut"
+      }
+    },
+    {
+      "id": "scene-17-right",
+      "label": "the interior rock stays stabilized at the annual average temperature—often eight",
+      "sequence": 3,
+      "narrativeRole": "Bước 3/3: vẽ cột right từ trên xuống",
+      "subtitle": "the interior rock stays stabilized at the annual average temperature—often eight to fifteen degrees cooler than the open",
+      "type": "story_island",
+      "region": {
+        "x": 1325,
+        "y": 0,
+        "width": 595,
+        "height": 1080
+      },
+      "reveal": {
+        "direction": "top_to_bottom",
+        "startMs": 9900,
+        "durationMs": 4950,
+        "maskPaddingPx": 0,
+        "protectedRegions": []
+      },
+      "handPath": {
+        "start": [
+          1503,
+          324
+        ],
+        "end": [
+          1771,
+          810
+        ],
+        "easing": "easeInOut"
+      }
+    }
+  ]
+}

@@ -1,0 +1,107 @@
+{
+  "sceneId": "test-01-scene-31",
+  "canvas": {
+    "width": 1920,
+    "height": 1080
+  },
+  "storyBasis": "the camp remained relaxed—telling stories, grooming, and preparing tools. True deep sleep occurred in the second half of the night, between three and six in the morning,",
+  "sceneDurationMs": 11760,
+  "elements": [
+    {
+      "id": "scene-31-left",
+      "label": "the camp remained relaxed—telling stories, grooming, and preparing tools. True d",
+      "sequence": 1,
+      "narrativeRole": "Bước 1/3: vẽ cột left từ trên xuống",
+      "subtitle": "the camp remained relaxed—telling stories, grooming, and preparing tools. True deep sleep occurred in the second half of",
+      "type": "story_island",
+      "region": {
+        "x": 0,
+        "y": 0,
+        "width": 595,
+        "height": 1080
+      },
+      "reveal": {
+        "direction": "top_to_bottom",
+        "startMs": 0,
+        "durationMs": 3653,
+        "maskPaddingPx": 0,
+        "protectedRegions": []
+      },
+      "handPath": {
+        "start": [
+          178,
+          324
+        ],
+        "end": [
+          446,
+          810
+        ],
+        "easing": "easeInOut"
+      }
+    },
+    {
+      "id": "scene-31-center",
+      "label": "the camp remained relaxed—telling stories, grooming, and preparing tools. True d",
+      "sequence": 2,
+      "narrativeRole": "Bước 2/3: vẽ cột center từ trên xuống",
+      "subtitle": "the camp remained relaxed—telling stories, grooming, and preparing tools. True deep sleep occurred in the second half of",
+      "type": "story_island",
+      "region": {
+        "x": 662,
+        "y": 0,
+        "width": 595,
+        "height": 1080
+      },
+      "reveal": {
+        "direction": "top_to_bottom",
+        "startMs": 3653,
+        "durationMs": 3653,
+        "maskPaddingPx": 0,
+        "protectedRegions": []
+      },
+      "handPath": {
+        "start": [
+          840,
+          324
+        ],
+        "end": [
+          1108,
+          810
+        ],
+        "easing": "easeInOut"
+      }
+    },
+    {
+      "id": "scene-31-right",
+      "label": "the camp remained relaxed—telling stories, grooming, and preparing tools. True d",
+      "sequence": 3,
+      "narrativeRole": "Bước 3/3: vẽ cột right từ trên xuống",
+      "subtitle": "the camp remained relaxed—telling stories, grooming, and preparing tools. True deep sleep occurred in the second half of",
+      "type": "story_island",
+      "region": {
+        "x": 1325,
+        "y": 0,
+        "width": 595,
+        "height": 1080
+      },
+      "reveal": {
+        "direction": "top_to_bottom",
+        "startMs": 7306,
+        "durationMs": 3654,
+        "maskPaddingPx": 0,
+        "protectedRegions": []
+      },
+      "handPath": {
+        "start": [
+          1503,
+          324
+        ],
+        "end": [
+          1771,
+          810
+        ],
+        "easing": "easeInOut"
+      }
+    }
+  ]
+}

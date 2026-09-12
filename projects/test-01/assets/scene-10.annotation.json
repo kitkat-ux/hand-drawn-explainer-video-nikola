@@ -1,0 +1,107 @@
+{
+  "sceneId": "test-01-scene-10",
+  "canvas": {
+    "width": 1920,
+    "height": 1080
+  },
+  "storyBasis": "During the climate extremes of the Late Pleistocene, equatorial heatwaves were relentless. Paleoclimate data shows that hunter-gatherer bands regularly endured dry seasons where daytime temperatures s",
+  "sceneDurationMs": 15580,
+  "elements": [
+    {
+      "id": "scene-10-left",
+      "label": "During the climate extremes of the Late Pleistocene, equatorial heatwaves were r",
+      "sequence": 1,
+      "narrativeRole": "Bước 1/3: vẽ cột left từ trên xuống",
+      "subtitle": "During the climate extremes of the Late Pleistocene, equatorial heatwaves were relentless. Paleoclimate data shows that ",
+      "type": "story_island",
+      "region": {
+        "x": 0,
+        "y": 0,
+        "width": 595,
+        "height": 1080
+      },
+      "reveal": {
+        "direction": "top_to_bottom",
+        "startMs": 0,
+        "durationMs": 4926,
+        "maskPaddingPx": 0,
+        "protectedRegions": []
+      },
+      "handPath": {
+        "start": [
+          178,
+          324
+        ],
+        "end": [
+          446,
+          810
+        ],
+        "easing": "easeInOut"
+      }
+    },
+    {
+      "id": "scene-10-center",
+      "label": "During the climate extremes of the Late Pleistocene, equatorial heatwaves were r",
+      "sequence": 2,
+      "narrativeRole": "Bước 2/3: vẽ cột center từ trên xuống",
+      "subtitle": "During the climate extremes of the Late Pleistocene, equatorial heatwaves were relentless. Paleoclimate data shows that ",
+      "type": "story_island",
+      "region": {
+        "x": 662,
+        "y": 0,
+        "width": 595,
+        "height": 1080
+      },
+      "reveal": {
+        "direction": "top_to_bottom",
+        "startMs": 4926,
+        "durationMs": 4927,
+        "maskPaddingPx": 0,
+        "protectedRegions": []
+      },
+      "handPath": {
+        "start": [
+          840,
+          324
+        ],
+        "end": [
+          1108,
+          810
+        ],
+        "easing": "easeInOut"
+      }
+    },
+    {
+      "id": "scene-10-right",
+      "label": "During the climate extremes of the Late Pleistocene, equatorial heatwaves were r",
+      "sequence": 3,
+      "narrativeRole": "Bước 3/3: vẽ cột right từ trên xuống",
+      "subtitle": "During the climate extremes of the Late Pleistocene, equatorial heatwaves were relentless. Paleoclimate data shows that ",
+      "type": "story_island",
+      "region": {
+        "x": 1325,
+        "y": 0,
+        "width": 595,
+        "height": 1080
+      },
+      "reveal": {
+        "direction": "top_to_bottom",
+        "startMs": 9853,
+        "durationMs": 4927,
+        "maskPaddingPx": 0,
+        "protectedRegions": []
+      },
+      "handPath": {
+        "start": [
+          1503,
+          324
+        ],
+        "end": [
+          1771,
+          810
+        ],
+        "easing": "easeInOut"
+      }
+    }
+  ]
+}
