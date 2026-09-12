@@ -39,8 +39,9 @@ MEDIA_CHECK = ROOT / "scripts" / "media_check.py"
 
 WIDTH, HEIGHT, FPS = 1920, 1080, 30
 FONT = "Be Vietnam Pro"
-TARGET_SCENE_S = 8.0      # nhịp đích mỗi cảnh stroke-story (repo: 4-8s)
-MIN_TAIL_SCENE_S = 2.0    # cảnh cụt cuối phim được gộp vào cảnh trước
+MAX_SCENES = 40          # ngân sách đích, không phải giới hạn cứng số cảnh
+MIN_SCENE_S = 8.0
+MAX_SCENE_S = 30.0
 GAZE_MS = 800             # thời gian ngắm bản vẽ hoàn chỉnh cuối mỗi cảnh
 OVERLAY_SPECKLE_PCT = 1.0  # % pixel sai khác mạnh (>50/255) ở frame cuối: ngưỡng bật source-overlay
                            # (đo bằng tỷ lệ pixel lệch cao, KHÔNG dùng sai khác trung bình vì lệch nền
@@ -53,7 +54,7 @@ The character is a chibi girl with a black ink #24251F bob haircut with side-swe
 MEASUREMENT CONVENTION: all pixel figures are measured on a 1360x765 canvas (16:9); body height = top of bob hair to heels; one head unit = top of bob hair to chin; face height is not a head unit.
 
 CHARACTER (copied verbatim from references/style-lock.md):
-- One chibi girl; proportions follow the MEASUREMENT CONVENTION above.
+- The same chibi girl wherever a character appears; proportions follow the MEASUREMENT CONVENTION above.
 - Proportion: 2.2 heads tall including bob hair (locked reference measures 434 px body height and 202 px head unit on a 765 px tall canvas). The face-height count (140 px face, about 3.1 face-heights per body) is recorded only to forbid its use as the head unit.
 - Hair: flat ink #24251F bob with side-swept fringe covering the forehead, bob ends curling inward at chin level; the hair is one solid flat shape with no strand lines.
 - Eyes: exactly two vertical-oval solid ink dots, each about 10 x 15 px on a 1360 px wide canvas, spaced about 53 px apart at mid-face height; no eyebrows, no lashes, no eye white, no pupil highlight.
@@ -63,7 +64,13 @@ CHARACTER (copied verbatim from references/style-lock.md):
 - Expression ceiling: neutral to mildly determined; no anger veins, no sweat drops, no blush, no tears, no gritted teeth.
 - Costume lock: sunflower #F0C541 short-sleeve T-shirt with a single neckline line, cobalt #2855C7 long trousers; no patterns, no logos, no buttons, no pockets, no collar.
 
-{layout_block}
+REGION LAW:
+- Every image contains exactly three separate clusters arranged in left / center / right vertical columns.
+- Column bounds are x=0%, 34.5%, 69%, each 31% of frame width. Keep all ink and fills inside their own column, inset enough to leave full-height vertical paper #F8F6EF gutters at least 4% of frame width between clusters; no stroke, arrow or object may bridge a gutter.
+- The three clusters tell one coherent three-step sequence, read from left to right; one step per cluster.
+- Each cluster contains at most one character OR two props; a wall line with its hole counts as one prop and an annotation arrow counts as one prop.
+- CHARACTER LOCK applies to every cluster containing a character. Keep the verbatim identity sentence in every prompt, even when no character appears.
+- Keep LINE, FILL, palette and the bottom 18% subtitle safe zone unchanged.
 
 FIXED STYLE — the sections below are copied verbatim from references/style-lock.md:
 
@@ -88,9 +95,9 @@ COMPOSITION:
 - Negative space: paper coverage at least 85% of frame area in every scene (locked reference measures 87.3%); 35% is the absolute rejection floor, not a target.
 - Subtitle safe zone: the bottom 18% of frame height (y >= 82% of height) contains zero non-paper pixels: no stroke, no fill, no arrow tip and no foot may cross into it (locked reference measures 0.000%).
 - Subject band: all characters and props sit inside y from 10% to 80% of frame height, with at least 15% paper margin on the left and right edges.
-- Maximum 3 props per scene; a wall line with its hole counts as one prop; an annotation arrow counts as one prop.
+- Per-cluster character and prop budgets follow REGION LAW.
 - Exactly one tomato #D64B36 annotation accent (arrow or circle) per scene, stroke 6-8 px, never labeled.
-- One action per scene; no collage, no panel splits, no frames, no borders, no background scenery.
+- One coherent three-step story per scene; separate clusters with blank paper only, no panel dividers, no frames, no borders, no background scenery.
 
 FORBIDDEN: text, letters, numbers, logos, watermark, photorealism, 3D render, glossy shading, gradients, cast shadows, pastel children's-book look, sticker sheet, icon grid, collage, dense small parts, pencil noise.
 
@@ -107,28 +114,6 @@ def clip_words(text: str, limit: int = 240) -> str:
     cut = flat[:limit]
     end = cut.rfind(" ")
     return (cut[:end] if end > 0 else cut).rstrip()
-
-
-# Mô tả layout nguyên văn từ mục COMPOSITION LAW của references/style-lock.md.
-LAYOUT_DESCRIPTIONS = {
-    "A": "Layout A: full-body character offset into the left or right third of the frame; all props on the opposite side; character width at most 45% of frame width.",
-    "B": "Layout B: close-up of one object or tool only; no character appears in the frame; the object fills at most 50% of frame width; the single tomato annotation accent may point at it.",
-    "C": "Layout C: half-body character cropped at the waist (no legs visible) with one oversized prop on the side opposite the character's facing direction.",
-}
-LAYOUT_B_NO_CHARACTER = ("Layout B has NO character in the frame; the CHARACTER LOCK sentence is included only "
-                         "as a style anchor for line width, palette and fill, and must NOT cause any character "
-                         "or body part to be drawn.")
-
-
-def layout_block(scene_n: int) -> str:
-    """Khối layout cụ thể cho cảnh: model không được tự suy ra bố cục."""
-    layout = "ABC"[(scene_n - 1) % 3]
-    others = [x for x in "ABC" if x != layout]
-    block = (f"THIS SCENE USES LAYOUT {layout}. Ignore the rules for layouts {others[0]} and {others[1]}.\n"
-             f"{LAYOUT_DESCRIPTIONS[layout]}")
-    if layout == "B":
-        block += f"\n{LAYOUT_B_NO_CHARACTER}"
-    return block
 
 
 def run(cmd: list[str], desc: str) -> None:
@@ -180,16 +165,52 @@ def audio_duration(path: Path, venv_py: Path) -> float:
     return float(out.stdout.strip())
 
 
-def group_scenes(cues: list[dict]) -> list[list[dict]]:
+def group_scenes(cues: list[dict], target: float) -> list[list[dict]]:
     scenes: list[list[dict]] = [[cues[0]]]
     for cue in cues[1:]:
-        if cue["end"] - scenes[-1][0]["start"] > TARGET_SCENE_S:
+        if cue["end"] - scenes[-1][0]["start"] > target:
             scenes.append([cue])
         else:
             scenes[-1].append(cue)
-    if len(scenes) > 1 and (scenes[-1][-1]["end"] - scenes[-1][0]["start"]) < MIN_TAIL_SCENE_S:
+    if len(scenes) > 1 and (scenes[-1][-1]["end"] - scenes[-1][0]["start"]) < 0.4 * target:
         scenes[-2].extend(scenes.pop())
     return scenes
+
+
+def default_annotation(project_name: str, scene: dict, w: int, h: int, scene_ms: int) -> dict:
+    """Ba cột vẽ nối tiếp; chia phần dư mili-giây, giữ nguyên thời gian ngắm."""
+    reveal_ms = scene_ms - GAZE_MS
+    if reveal_ms < 3:
+        raise ValueError("Cảnh quá ngắn để vẽ 3 vùng và giữ GAZE_MS")
+    idx = f"{scene['n']:02d}"
+    elements = []
+    region_width = int(w * 0.31)
+    for i, (name, ratio) in enumerate((("left", 0), ("center", 0.345), ("right", 0.69))):
+        x = round(w * ratio)
+        start_ms = reveal_ms * i // 3
+        end_ms = reveal_ms * (i + 1) // 3
+        elements.append({
+            "id": f"scene-{idx}-{name}",
+            "label": scene["caption"][:80],
+            "sequence": i + 1,
+            "narrativeRole": f"Bước {i + 1}/3: vẽ cột {name} từ trên xuống",
+            "subtitle": scene["caption"][:120],
+            "type": "story_island",
+            "region": {"x": x, "y": 0, "width": region_width, "height": h},
+            "reveal": {"direction": "top_to_bottom", "startMs": start_ms,
+                       "durationMs": end_ms - start_ms,
+                       "maskPaddingPx": 0, "protectedRegions": []},
+            "handPath": {"start": [x + int(region_width * 0.3), int(h * 0.3)],
+                         "end": [x + int(region_width * 0.75), int(h * 0.75)],
+                         "easing": "easeInOut"},
+        })
+    return {
+        "sceneId": f"{project_name}-scene-{idx}",
+        "canvas": {"width": w, "height": h},
+        "storyBasis": scene["caption"][:200],
+        "sceneDurationMs": scene_ms,
+        "elements": elements,
+    }
 
 
 def main() -> int:
@@ -225,7 +246,10 @@ def main() -> int:
     audio_dur = audio_duration(audio_path, VENV_PY)
     duration = round(max(audio_dur, cues[-1]["end"] + 0.2), 3)
 
-    groups = group_scenes(cues)
+    target = min(MAX_SCENE_S, max(MIN_SCENE_S, duration / MAX_SCENES))
+    groups = group_scenes(cues, target)
+    print(f"Nhịp cảnh: audio_duration={audio_dur:.3f}s, duration={duration:.3f}s, "
+          f"target={target:.3f}s, scenes={len(groups)}")
     scenes: list[dict] = []
     prev_end = 0.0
     for i, group in enumerate(groups, start=1):
@@ -276,7 +300,7 @@ def main() -> int:
         prompt_file = assets / f"scene-{idx}.prompt.txt"
         if not prompt_file.is_file():
             narrative = clip_words(scene["caption"], 240)
-            prompt_file.write_text(PROMPT_TEMPLATE.format(narrative=narrative, layout_block=layout_block(scene["n"])),
+            prompt_file.write_text(PROMPT_TEMPLATE.format(narrative=narrative),
                                    encoding="utf-8")
         if not image.is_file():
             if hook:
@@ -290,26 +314,7 @@ def main() -> int:
         ann_path = assets / f"scene-{idx}.annotation.json"
         if not ann_path.is_file():  # giữ bản annotation do agent tinh chỉnh nếu đã có
             scene_ms = int(round((scene["end"] - scene["start"]) * 1000))
-            reveal_ms = max(1000, scene_ms - GAZE_MS)
-            ann = {
-                "sceneId": f"{project.name}-scene-{idx}",
-                "canvas": {"width": w, "height": h},
-                "storyBasis": scene["caption"][:200],
-                "sceneDurationMs": scene_ms,
-                "elements": [{
-                    "id": f"scene-{idx}-full",
-                    "label": scene["caption"][:80],
-                    "sequence": 1,
-                    "narrativeRole": "Vẽ toàn cảnh theo thứ tự nét rồi bổ màu",
-                    "subtitle": scene["caption"][:120],
-                    "type": "story_island",
-                    "region": {"x": 0, "y": 0, "width": w, "height": h},
-                    "reveal": {"direction": "top_to_bottom", "startMs": 0, "durationMs": reveal_ms,
-                               "maskPaddingPx": 20, "protectedRegions": []},
-                    "handPath": {"start": [int(w * 0.3), int(h * 0.3)], "end": [int(w * 0.75), int(h * 0.75)],
-                                 "easing": "easeInOut"},
-                }],
-            }
+            ann = default_annotation(project.name, scene, w, h, scene_ms)
             ann_path.write_text(json.dumps(ann, ensure_ascii=False, indent=2), encoding="utf-8")
 
     if missing_images:

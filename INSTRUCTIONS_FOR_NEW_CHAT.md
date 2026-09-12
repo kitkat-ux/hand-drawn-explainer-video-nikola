@@ -53,7 +53,7 @@ python3 scripts/stroke_story_preflight.py --report /tmp/preflight.json   # phả
 - Mỗi video = 1 thư mục `projects/<tên>/` tự chứa: `script.txt`, `captions.srt`,
   `narration.mp3|.wav|.m4a`, `assets/scene-NN.png` (+ `.prompt.txt`, `.annotation.json`),
   `timeline.json`, `captions.ass`, `final.mp4`.
-- Git track: kịch bản, srt, audio, ảnh line-art, `final.mp4` + text dẫn xuất nhỏ.
+- Git track: kịch bản, srt, audio, ảnh line-art + text dẫn xuất nhỏ; `final.mp4` lấy qua `/download-workspace`, không commit.
 - Git ignore (đã cấu hình): `*.raw`, `projects/*/render/`, `projects/*/frames/`, cache ffmpeg,
   `verification.json`, `contact.jpg`, `stroke-finalize.json`.
 - Muốn tinh chỉnh nghệ thuật (đa vùng ngữ nghĩa, keyword layer, hand-height…): sửa
